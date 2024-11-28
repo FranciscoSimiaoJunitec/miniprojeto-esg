@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import geoData from '../assets/portugal-regions.json';
 
 const PortugalMap: React.FC = () => {
+  const [tooltipContent, setTooltipContent] = useState('');
+
+  useEffect(() => {
+   
+  }, [tooltipContent]);
+
   return (
     <div style={{ 
       display: 'flex',
@@ -10,12 +17,13 @@ const PortugalMap: React.FC = () => {
       alignItems: 'center',
       height: '100%',
       paddingLeft: '20px',
+      position: 'relative' 
     }}>
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
-          center: [-8, 39.5],
-          scale: 3500,
+          center: [-8, 39.9],
+          scale: 4000,
         }}
         style={{ 
           width: '100%',
@@ -33,25 +41,38 @@ const PortugalMap: React.FC = () => {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
+                  data-tooltip-id={isPortugal ? "my-tooltip" : undefined}
+                  data-tooltip-content={isPortugal ? geo.properties.name : undefined}
+                  onMouseEnter={() => {
+                    if (isPortugal) {
+                      const { name } = geo.properties;
+                      setTooltipContent(name);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    if (isPortugal) {
+                      setTooltipContent('');
+                    }
+                  }}
                   style={{
                     default: {
-                      fill: isPortugal ? '#73cfee' : '#033681', 
+                      fill: isPortugal ? '#73cfee' : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
-                      outline: 'none : none',
+                      outline: 'none',
                     },
                     hover: {
                       fill: isPortugal ? '#3399ff' : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
-                      outline: 'none : none',
+                      outline: 'none',
                     },
-                    // pressed: {
-                    //   fill: isPortugal ? '#0066cc' : '#033681',
-                    //   stroke: '#1d4777',
-                    //   strokeWidth: 0.5,
-                    //   outline: 'none : none',
-                    // },
+                    pressed: {
+                      fill: isPortugal ? '#3399ff' : '#033681',
+                      stroke: '#1d4777',
+                      strokeWidth: 0.5,
+                      outline: 'none',
+                    },
                   }}
                 />
               );
@@ -59,6 +80,10 @@ const PortugalMap: React.FC = () => {
           }
         </Geographies>
       </ComposableMap>
+      <ReactTooltip
+        id="my-tooltip"
+        place="top"
+      />
     </div>
   );
 };
