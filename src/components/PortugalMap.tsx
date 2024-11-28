@@ -30,7 +30,7 @@ const PortugalMap: React.FC = () => {
           height: '600px',
           maxWidth: '900px',
           marginLeft: 'auto',
-          marginRight: '-50',
+          marginRight: '-32',
         }}
       >
         <Geographies geography={geoData}>

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Commitment from './components/Commitment';
 import MapText from './components/MapText';
+import Progress from './components/Progress';
 
 
 const App: React.FC = () => {
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <main>
         <Home />
         <Commitment />
+        <Progress />
         <MapText />
       </main>
     </div>
