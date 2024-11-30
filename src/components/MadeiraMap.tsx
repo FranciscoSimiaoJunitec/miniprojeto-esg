@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
-import geoData from '../assets/portugal-regions.json';
+import geoData from '../assets/madeira.json';
 
 
-type PortugalMapProps = {
+type MadeiraMapProps = {
   tooltipId: string;
 };
 
-const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
+const MadeiraMap: React.FC<MadeiraMapProps> = ({ tooltipId }) => {
   const [tooltipContent, setTooltipContent] = useState('');
 
   return (
@@ -16,23 +16,23 @@ const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
-          center: [-9, 39.9],
-          scale: 4000,
+          center: [-16.9, 32.7],
+          scale: 7000,
         }}
         style={{ width: '100%', height: '100%' }}
       >
         <Geographies geography={geoData}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const isPortugal = geo.properties.id.startsWith('PT');
+              const isMadeira = geo.properties.id.startsWith('MD');
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
                   data-tooltip-id={tooltipId} 
-                  data-tooltip-content={isPortugal ? geo.properties.name : undefined}
+                  data-tooltip-content={isMadeira ? geo.properties.name : undefined}
                   onMouseEnter={() => {
-                    if (isPortugal) {
+                    if (isMadeira) {
                       setTooltipContent(geo.properties.name);
                     }
                   }}
@@ -41,19 +41,19 @@ const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
                   }}
                   style={{
                     default: {
-                      fill: isPortugal ? '#73cfee' : '#033681',
+                      fill: isMadeira ? '#73cfee' : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     hover: {
-                      fill: isPortugal ? '#3399ff' : '#033681',
+                      fill: isMadeira ? '#3399ff' : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     pressed: {
-                      fill: isPortugal ? '#3399ff' : '#033681',
+                      fill: isMadeira ? '#3399ff' : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
@@ -70,4 +70,4 @@ const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
   );
 };
 
-export default PortugalMap;
+export default MadeiraMap;
