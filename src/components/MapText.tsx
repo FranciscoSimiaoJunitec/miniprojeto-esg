@@ -3,7 +3,6 @@ import PortugalMap from './PortugalMap';
 import { ImQuotesLeft } from "react-icons/im";
 import MadeiraMap from './MadeiraMap';
 import AcoresMap from './AcoresMap';
-
 const MapText: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row items-start justify-between bg-gradient-to-b from-[#3e7ab9] to-[#053581] p-8 text-white">
