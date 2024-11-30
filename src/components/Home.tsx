@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
           FAZ A DIFERENÇA.
         </h3>
       </div>
-      <div className='mt-48 z-20 flex justify-center'>
+      <div className='mt-56 z-20 flex justify-center'>
         <div className="w-7 h-12 border-2 border-white rounded-full flex items-center justify-center">
           <div className="w-4 h-4 bg-white border-4 border-white rounded-full animate-grow-bounce"></div>
         </div>
