@@ -1,12 +1,13 @@
 import React from 'react';
 
+
 const HeroSection: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col py-36 px-16 relative">
       {/* Layer 1: Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/background.svg"
+          src={`${process.env.PUBLIC_URL}/background.svg`} 
           alt="Background"
           className="object-cover w-full h-full"
         />
@@ -15,10 +16,10 @@ const HeroSection: React.FC = () => {
       {/* Layer 2: Blue Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={`${process.env.PUBLIC_URL}/background.svg`} 
+          src={`${process.env.PUBLIC_URL}/blur.svg`} 
           alt="Blur"
           className="object-cover w-full h-full"
-          style={{ filter: 'blur(1px)' }} 
+          style={{ filter: 'blur(10px)' }} 
         />
       </div>
       <div className='text-start z-20 text-white '>

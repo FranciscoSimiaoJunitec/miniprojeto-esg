@@ -5,7 +5,6 @@ const Header: React.FC = () => {
   return (
     <header className="bg-[#0944A1] text-white flex items-center justify-center py-6 px-8">
       <div className="container mx-auto flex items-center justify-between">
-        
         <nav className="flex-1 flex justify-center">
           <ul className="flex gap-48 text-xl font-semibold">
             <li><img src={`${process.env.PUBLIC_URL}/prancheta.svg`} alt="logo" /></li>
