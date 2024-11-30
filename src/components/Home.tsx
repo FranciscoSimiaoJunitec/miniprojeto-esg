@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       {/* Layer 2: Blue Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/blur.svg"
+          src={`${process.env.PUBLIC_URL}/background.svg`} 
           alt="Blur"
           className="object-cover w-full h-full"
           style={{ filter: 'blur(1px)' }} 
@@ -35,6 +35,7 @@ const HeroSection: React.FC = () => {
           <div className="w-4 h-4 bg-white border-4 border-white rounded-full animate-grow-bounce"></div>
         </div>
       </div>
+      <img src={`${process.env.PUBLIC_URL}/prancheta.svg`} alt="logo" />
     </div>
   );
 };

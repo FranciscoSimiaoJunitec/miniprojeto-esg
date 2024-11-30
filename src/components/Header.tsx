@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         
         <nav className="flex-1 flex justify-center">
           <ul className="flex gap-48 text-xl font-semibold">
-            <li><img src="/prancheta.svg" alt="logo" /></li>
+            <li><img src={`${process.env.PUBLIC_URL}/prancheta.svg`} alt="logo" /></li>
             <li><a href="#help" className="hover-effect">Como Ajudar</a></li>
             <li><a href="#about" className="hover-effect">Conhece-nos</a></li>
             <li><a href="#contacts" className="hover-effect">Contactos</a></li>
