@@ -16,7 +16,6 @@ const App: React.FC = () => {
         <Commitment />
         <Progress />
         <Gallery />
-     
         <MapText />
       </main>
     </div>
