@@ -19,8 +19,8 @@ const Commitment: React.FC = () => {
         className="w-full"
       >
         <blockquote className="italic text-lg md:text-3xl text-center mb-8">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          <span className="block mt-4 text-lg md:text-xl font-light text-end">Carlos Rebelo, Presidente da JUNITEC</span>
+          "Numa geração que sonha com um futuro melhor, na JUNITEC transformamos ideias em ações que impactam o presente."
+          <span className="block mt-4 text-lg md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
         </blockquote>
       </motion.div>
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center relative">

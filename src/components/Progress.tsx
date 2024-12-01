@@ -49,7 +49,8 @@ const Progress: React.FC = () => {
           <h2 className='text-center text-5xl mb-2'>
             {isInView && <Counter from={0} to={350} duration={2.5} />}
           </h2>
-          <p className='text-center'>Euros Doados</p>
+          <p className='text-center'>Doações</p>
+          <p className='text-center'>Monetárias</p>
         </motion.div>
       </div>
     </motion.div>
