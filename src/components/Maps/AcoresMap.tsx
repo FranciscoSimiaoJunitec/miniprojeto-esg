@@ -67,7 +67,7 @@ const AcoresMap: React.FC<AcoresMapProps> = ({ tooltipId }) => {
           </Geographies>
         </ComposableMap>
       </div>
-      <ReactTooltip id={tooltipId} place="top" />
+      <ReactTooltip id={tooltipId} place="top" className='font-bold'/>
     </div>
   );
 };

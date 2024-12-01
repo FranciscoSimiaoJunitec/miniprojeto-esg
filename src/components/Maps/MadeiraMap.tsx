@@ -65,7 +65,7 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({ tooltipId }) => {
           }
         </Geographies>
       </ComposableMap>
-      <ReactTooltip id={tooltipId} place="top" />
+      <ReactTooltip id={tooltipId} place="top" className='font-bold'/>
     </div>
   );
 };

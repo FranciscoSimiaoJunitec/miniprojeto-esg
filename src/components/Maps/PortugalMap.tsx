@@ -6,9 +6,16 @@ import geoData from '../../assets/portugal-regions.json';
 
 type PortugalMapProps = {
   tooltipId: string;
+  selectedRegion: string | null;
+  setSelectedRegion: (region: string | null) => void;
 };
 
-const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
+const PortugalMap: React.FC<PortugalMapProps> = ({
+  tooltipId,
+  selectedRegion,
+  setSelectedRegion,
+}) => {
+
   const [tooltipContent, setTooltipContent] = useState('');
 
   return (
@@ -25,6 +32,9 @@ const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
           {({ geographies }) =>
             geographies.map((geo) => {
               const isPortugal = geo.properties.id.startsWith('PT');
+              const regionId = geo.properties.id;
+              const isSelected = selectedRegion === regionId;
+
               return (
                 <Geography
                   key={geo.rsmKey}
@@ -39,21 +49,26 @@ const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
                   onMouseLeave={() => {
                     setTooltipContent('');
                   }}
+                  onClick={() => {
+                    if (isPortugal) {
+                      setSelectedRegion(regionId)};
+                    }
+                  }
                   style={{
                     default: {
-                      fill: isPortugal ? '#73cfee' : '#033681',
+                      fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     hover: {
-                      fill: isPortugal ? '#3399ff' : '#033681',
+                      fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     pressed: {
-                      fill: isPortugal ? '#3399ff' : '#033681',
+                      fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
@@ -65,7 +80,7 @@ const PortugalMap: React.FC<PortugalMapProps> = ({ tooltipId }) => {
           }
         </Geographies>
       </ComposableMap>
-      <ReactTooltip id={tooltipId} place="top" />
+      <ReactTooltip id={tooltipId} place="top" className='font-bold'/>
     </div>
   );
 };
