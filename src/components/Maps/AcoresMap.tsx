@@ -3,11 +3,10 @@ import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import geoData from '../../assets/portugal-regions.json';
 
-
 type AcoresMapProps = {
   tooltipId: string;
-  selectedRegion: string | null;
-  setSelectedRegion: (region: string | null) => void;
+  selectedRegion: any | null;
+  setSelectedRegion: (region: any | null) => void; // Updated to accept full region object
 };
 
 const AcoresMap: React.FC<AcoresMapProps> = ({
@@ -15,7 +14,6 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
   selectedRegion,
   setSelectedRegion,
 }) => {
-
   const [tooltipContent, setTooltipContent] = useState('');
 
   return (
@@ -33,14 +31,13 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
             {({ geographies }) =>
               geographies.map((geo) => {
                 const isPortugal = geo.properties.id.startsWith('PT');
-                const regionId = geo.properties.id;
-                const isSelected = selectedRegion === regionId;
+                const isSelected = selectedRegion?.properties?.id === geo.properties.id;
 
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    data-tooltip-id={tooltipId} 
+                    data-tooltip-id={tooltipId}
                     data-tooltip-content={isPortugal ? geo.properties.name : undefined}
                     onMouseEnter={() => {
                       if (isPortugal) {
@@ -52,9 +49,9 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
                     }}
                     onClick={() => {
                       if (isPortugal) {
-                        setSelectedRegion(regionId)};
+                        setSelectedRegion(geo); // Pass full region object
                       }
-                    }
+                    }}
                     style={{
                       default: {
                         fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
@@ -85,7 +82,7 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
           </Geographies>
         </ComposableMap>
       </div>
-      <ReactTooltip id={tooltipId} place="top" className='font-bold'/>
+      <ReactTooltip id={tooltipId} place="top" className="font-bold" />
     </div>
   );
 };

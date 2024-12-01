@@ -6,8 +6,8 @@ import geoData from '../../assets/portugal-regions.json';
 
 type PortugalMapProps = {
   tooltipId: string;
-  selectedRegion: string | null;
-  setSelectedRegion: (region: string | null) => void;
+  selectedRegion: any | null;
+  setSelectedRegion: (region: any | null) => void; 
 };
 
 const PortugalMap: React.FC<PortugalMapProps> = ({
@@ -32,8 +32,7 @@ const PortugalMap: React.FC<PortugalMapProps> = ({
           {({ geographies }) =>
             geographies.map((geo) => {
               const isPortugal = geo.properties.id.startsWith('PT');
-              const regionId = geo.properties.id;
-              const isSelected = selectedRegion === regionId;
+              const isSelected = selectedRegion === geo;
 
               return (
                 <Geography
@@ -51,7 +50,7 @@ const PortugalMap: React.FC<PortugalMapProps> = ({
                   }}
                   onClick={() => {
                     if (isPortugal) {
-                      setSelectedRegion(regionId)};
+                      setSelectedRegion(geo)};
                     }
                   }
                   style={{

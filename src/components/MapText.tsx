@@ -7,7 +7,7 @@ import SlideInAnimation from './animations/MapSlide';
 import SideBar from './SideBar';
 
 const MapText: React.FC = () => {
-  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+  const [selectedRegion, setSelectedRegion] = useState<any | null>(null);
 
   return (
     <div

@@ -2,7 +2,7 @@ import React from 'react';
 import SlideInAnimation from './animations/MapSlide';
 
 type SideBarProps = {
-  region: string | null;
+  region: any | null;
   onClose: () => void;
 };
 
@@ -26,7 +26,7 @@ const SideBar: React.FC<SideBarProps> = ({ region, onClose }) => {
         <div className='mt-20'>
             <h2 className="text-3xl font-bold mb-4">Selected Region</h2>
             <p className="text-lg">
-                <strong>Region ID:</strong> {region}
+                <strong>Region Name:</strong> {region.properties.name}
             </p>
             <p className="mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Add more
