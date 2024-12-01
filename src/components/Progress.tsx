@@ -54,6 +54,8 @@ const Progress: React.FC = () => {
         </motion.div>
       </div>
     </motion.div>
+
+    
   );
 };
 

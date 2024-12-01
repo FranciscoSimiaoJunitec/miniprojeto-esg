@@ -51,16 +51,18 @@ const MapText: React.FC = () => {
             setSelectedRegion={setSelectedRegion}
           />
         </SlideInAnimation>
+
         <SlideInAnimation
           direction="right"
           className="absolute z-20 top-[20%] left-[-75%] transform translate-x-[-50%] translate-y-[-55%] scale-[0.95] w-[120%]"
         >
           <AcoresMap 
-            tooltipId="madeira-tooltip" 
+            tooltipId="acores-tooltip" 
             selectedRegion={selectedRegion}
             setSelectedRegion={setSelectedRegion}
           />
         </SlideInAnimation>
+
         <SlideInAnimation
           direction="right"
           className="absolute inset-0 z-10 right-[-20%] transform translate-x-[-12.2%] scale-[1]"

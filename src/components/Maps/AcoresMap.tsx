@@ -56,22 +56,22 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
                       default: {
                         fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
                         cursor: isPortugal ? 'pointer' : 'default',
-                        stroke: '#1d4777',
-                        strokeWidth: 0.5,
+                        stroke: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
+                        strokeWidth: 4,
                         outline: 'none',
                       },
                       hover: {
                         fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
                         cursor: isPortugal ? 'pointer' : 'default',
-                        stroke: '#1d4777',
-                        strokeWidth: 0.5,
+                        stroke: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                        strokeWidth: 4,
                         outline: 'none',
                       },
                       pressed: {
                         fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
                         cursor: isPortugal ? 'pointer' : 'default',
-                        stroke: '#1d4777',
-                        strokeWidth: 0.5,
+                        stroke: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                        strokeWidth: 4,
                         outline: 'none',
                       },
                     }}

@@ -18,7 +18,7 @@ const Commitment: React.FC = () => {
         transition={{ duration: 1.6, ease: "easeOut" }}
         className="w-full"
       >
-        <blockquote className="italic text-lg md:text-3xl text-center mb-8">
+        <blockquote className="italic text-lg md:text-3xl text-center mb-8 pb-8">
           "Numa geração que sonha com um futuro melhor, na JUNITEC transformamos ideias em ações que impactam o presente."
           <span className="block mt-4 text-lg md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
         </blockquote>
