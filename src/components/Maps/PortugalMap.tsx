@@ -57,18 +57,21 @@ const PortugalMap: React.FC<PortugalMapProps> = ({
                   style={{
                     default: {
                       fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
+                      cursor: 'pointer',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     hover: {
                       fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                      cursor: 'pointer',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     pressed: {
                       fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                      cursor: 'pointer',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',

@@ -6,9 +6,16 @@ import geoData from '../../assets/acores.json';
 
 type AcoresMapProps = {
   tooltipId: string;
+  selectedRegion: string | null;
+  setSelectedRegion: (region: string | null) => void;
 };
 
-const AcoresMap: React.FC<AcoresMapProps> = ({ tooltipId }) => {
+const AcoresMap: React.FC<AcoresMapProps> = ({
+  tooltipId,
+  selectedRegion,
+  setSelectedRegion,
+}) => {
+
   const [tooltipContent, setTooltipContent] = useState('');
 
   return (
@@ -25,38 +32,49 @@ const AcoresMap: React.FC<AcoresMapProps> = ({ tooltipId }) => {
           <Geographies geography={geoData}>
             {({ geographies }) =>
               geographies.map((geo) => {
-                const isMadeira = geo.properties.id.startsWith('AC');
+                const isAcores = geo.properties.id.startsWith('AC');
+                const regionId = geo.properties.id;
+                const isSelected = selectedRegion === regionId;
+
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
                     data-tooltip-id={tooltipId} 
-                    data-tooltip-content={isMadeira ? geo.properties.name : undefined}
+                    data-tooltip-content={isAcores ? geo.properties.name : undefined}
                     onMouseEnter={() => {
-                      if (isMadeira) {
+                      if (isAcores) {
                         setTooltipContent(geo.properties.name);
                       }
                     }}
                     onMouseLeave={() => {
                       setTooltipContent('');
                     }}
+                    onClick={() => {
+                      if (isAcores) {
+                        setSelectedRegion(regionId)};
+                      }
+                    }
                     style={{
                       default: {
-                        fill: isMadeira ? '#73cfee' : '#033681',
-                        stroke: isMadeira ? '#73cfee' : '#033681', 
-                        strokeWidth: 3,
+                        fill: isAcores ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
+                        cursor: 'pointer',
+                        stroke: '#1d4777',
+                        strokeWidth: 0.5,
                         outline: 'none',
                       },
                       hover: {
-                        fill: isMadeira ? '#3399ff' : '#033681',
-                        stroke: isMadeira ? '#3399ff' : '#033681', 
-                        strokeWidth: 3,
+                        fill: isAcores ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                        cursor: 'pointer',
+                        stroke: '#1d4777',
+                        strokeWidth: 0.5,
                         outline: 'none',
                       },
                       pressed: {
-                        fill: isMadeira ? '#3399ff' : '#033681',
-                        stroke: isMadeira ? '#3399ff' : '#033681',
-                        strokeWidth: 3,
+                        fill: isAcores ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                        cursor: 'pointer',
+                        stroke: '#1d4777',
+                        strokeWidth: 0.5,
                         outline: 'none',
                       },
                     }}

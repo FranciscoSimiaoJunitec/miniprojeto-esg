@@ -6,9 +6,16 @@ import geoData from '../../assets/madeira.json';
 
 type MadeiraMapProps = {
   tooltipId: string;
+  selectedRegion: string | null;
+  setSelectedRegion: (region: string | null) => void;
 };
 
-const MadeiraMap: React.FC<MadeiraMapProps> = ({ tooltipId }) => {
+const MadeiraMap: React.FC<MadeiraMapProps> = ({
+    tooltipId,
+    selectedRegion,
+    setSelectedRegion,
+  }) => {
+
   const [tooltipContent, setTooltipContent] = useState('');
 
   return (
@@ -25,6 +32,9 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({ tooltipId }) => {
           {({ geographies }) =>
             geographies.map((geo) => {
               const isMadeira = geo.properties.id.startsWith('MD');
+              const regionId = geo.properties.id;
+              const isSelected = selectedRegion === regionId;
+
               return (
                 <Geography
                   key={geo.rsmKey}
@@ -39,21 +49,29 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({ tooltipId }) => {
                   onMouseLeave={() => {
                     setTooltipContent('');
                   }}
+                  onClick={() => {
+                    if (isMadeira) {
+                      setSelectedRegion(regionId)};
+                    }
+                  }
                   style={{
                     default: {
-                      fill: isMadeira ? '#73cfee' : '#033681',
+                      fill: isMadeira ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
+                      cursor: 'pointer',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     hover: {
-                      fill: isMadeira ? '#3399ff' : '#033681',
+                      fill: isMadeira ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                      cursor: 'pointer',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     pressed: {
-                      fill: isMadeira ? '#3399ff' : '#033681',
+                      fill: isMadeira ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                      cursor: 'pointer',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
