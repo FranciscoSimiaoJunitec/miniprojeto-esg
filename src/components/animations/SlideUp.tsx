@@ -13,7 +13,7 @@ const MoveUpAnimation: React.FC<MoveUpAnimationProps> = ({ direction, children, 
 
   const variants = {
     hidden: { y: direction === 'up' ? 20 : 20 },
-    visible: { y: -100, transition: { duration: 0.8 } }
+    visible: { y: -200, transition: { duration: 0.8 } }
   };
 
   return (

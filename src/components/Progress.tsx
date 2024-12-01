@@ -14,7 +14,7 @@ const Progress: React.FC = () => {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h1 className='text-left absolute font-700 pl-8 text-6xl -translate-y-24 pb-10'>PROGRESSO</h1>
+      <h1 className='text-left absolute font-700 pl-8 text-6xl -translate-y-24 pb-10'>PROGRESSO 2024</h1>
       <div className='flex flex-row py-12 px-8 justify-evenly bg-[#F3EEE9]'>
         <motion.div 
           className='w-1/6'
@@ -35,7 +35,7 @@ const Progress: React.FC = () => {
           transition={{ delay: 0.5 }}
         >
           <h2 className='text-center text-5xl mb-2'>
-            {isInView && <Counter from={0} to={4} duration={1.5} />}
+            {isInView && <Counter from={0} to={8} duration={1.5} />}
           </h2>
           <p className='text-center'>Associações Impactadas</p>
         </motion.div>
@@ -47,7 +47,7 @@ const Progress: React.FC = () => {
           transition={{ delay: 0.7 }}
         >
           <h2 className='text-center text-5xl mb-2'>
-            {isInView && <Counter from={0} to={350} duration={2.5} />}
+            {isInView && <Counter from={0} to={500} duration={2.5} />}
           </h2>
           <p className='text-center'>Doações</p>
           <p className='text-center'>Monetárias</p>
