@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
-import geoData from '../../assets/acores.json';
+import geoData from '../../assets/portugal-regions.json';
 
 
 type AcoresMapProps = {
@@ -32,7 +32,7 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
           <Geographies geography={geoData}>
             {({ geographies }) =>
               geographies.map((geo) => {
-                const isAcores = geo.properties.id.startsWith('AC');
+                const isPortugal = geo.properties.id.startsWith('PT');
                 const regionId = geo.properties.id;
                 const isSelected = selectedRegion === regionId;
 
@@ -41,9 +41,9 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
                     key={geo.rsmKey}
                     geography={geo}
                     data-tooltip-id={tooltipId} 
-                    data-tooltip-content={isAcores ? geo.properties.name : undefined}
+                    data-tooltip-content={isPortugal ? geo.properties.name : undefined}
                     onMouseEnter={() => {
-                      if (isAcores) {
+                      if (isPortugal) {
                         setTooltipContent(geo.properties.name);
                       }
                     }}
@@ -51,28 +51,28 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
                       setTooltipContent('');
                     }}
                     onClick={() => {
-                      if (isAcores) {
+                      if (isPortugal) {
                         setSelectedRegion(regionId)};
                       }
                     }
                     style={{
                       default: {
-                        fill: isAcores ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
-                        cursor: 'pointer',
+                        fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
+                        cursor: isPortugal ? 'pointer' : 'default',
                         stroke: '#1d4777',
                         strokeWidth: 0.5,
                         outline: 'none',
                       },
                       hover: {
-                        fill: isAcores ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                        cursor: 'pointer',
+                        fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                        cursor: isPortugal ? 'pointer' : 'default',
                         stroke: '#1d4777',
                         strokeWidth: 0.5,
                         outline: 'none',
                       },
                       pressed: {
-                        fill: isAcores ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                        cursor: 'pointer',
+                        fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                        cursor: isPortugal ? 'pointer' : 'default',
                         stroke: '#1d4777',
                         strokeWidth: 0.5,
                         outline: 'none',

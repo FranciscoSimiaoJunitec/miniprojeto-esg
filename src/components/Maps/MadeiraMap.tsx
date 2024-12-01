@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
-import geoData from '../../assets/madeira.json';
+import geoData from '../../assets/portugal-regions.json';
 
 
 type MadeiraMapProps = {
@@ -31,7 +31,7 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({
         <Geographies geography={geoData}>
           {({ geographies }) =>
             geographies.map((geo) => {
-              const isMadeira = geo.properties.id.startsWith('MD');
+              const isPortugal = geo.properties.id.startsWith('PT');
               const regionId = geo.properties.id;
               const isSelected = selectedRegion === regionId;
 
@@ -40,9 +40,9 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({
                   key={geo.rsmKey}
                   geography={geo}
                   data-tooltip-id={tooltipId} 
-                  data-tooltip-content={isMadeira ? geo.properties.name : undefined}
+                  data-tooltip-content={isPortugal ? geo.properties.name : undefined}
                   onMouseEnter={() => {
-                    if (isMadeira) {
+                    if (isPortugal) {
                       setTooltipContent(geo.properties.name);
                     }
                   }}
@@ -50,28 +50,28 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({
                     setTooltipContent('');
                   }}
                   onClick={() => {
-                    if (isMadeira) {
+                    if (isPortugal) {
                       setSelectedRegion(regionId)};
                     }
                   }
                   style={{
                     default: {
-                      fill: isMadeira ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
-                      cursor: 'pointer',
+                      fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
+                      cursor: isPortugal ? 'pointer' : 'default',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     hover: {
-                      fill: isMadeira ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                      cursor: 'pointer',
+                      fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                      cursor: isPortugal ? 'pointer' : 'default',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',
                     },
                     pressed: {
-                      fill: isMadeira ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                      cursor: 'pointer',
+                      fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
+                      cursor: isPortugal ? 'pointer' : 'default',
                       stroke: '#1d4777',
                       strokeWidth: 0.5,
                       outline: 'none',

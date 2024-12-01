@@ -35,7 +35,7 @@ const Commitment: React.FC = () => {
           </p>
         </SlideRightAnimation>
         
-        <MoveUpAnimation direction="up" className="absolute top-[calc(50%-30px)] left-[calc(50%-30px)] md:w-3/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-10 md:-translate-x-16 z-20">
+        <MoveUpAnimation direction="up" className="absolute top-[calc(50%-30px)] left-[calc(50%-50px)] md:w-3/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-10 md:-translate-x-16 z-20">
           <iframe
             width="100%"
             height="100%"

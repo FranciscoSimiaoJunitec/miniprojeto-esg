@@ -7,6 +7,8 @@ type SideBarProps = {
 };
 
 const SideBar: React.FC<SideBarProps> = ({ region, onClose }) => {
+    console.log(region);
+
   return (
     <SlideInAnimation
         direction="left"
@@ -21,14 +23,16 @@ const SideBar: React.FC<SideBarProps> = ({ region, onClose }) => {
         >
         &times;
         </button>
-        <h2 className="text-3xl font-bold mb-4">Selected Region</h2>
-        <p className="text-lg">
-            <strong>Region ID:</strong> {region}
-        </p>
-        <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Add more
-            details about the selected region here.
-        </p>
+        <div className='mt-20'>
+            <h2 className="text-3xl font-bold mb-4">Selected Region</h2>
+            <p className="text-lg">
+                <strong>Region ID:</strong> {region}
+            </p>
+            <p className="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Add more
+                details about the selected region here.
+            </p>
+        </div>
     </SlideInAnimation>
   );
 };
