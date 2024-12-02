@@ -1335,7 +1335,8 @@
         "id": "PT07",
         "name": "Évora"
       },
-      "id": 1
+      "id": 1,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -2295,7 +2296,8 @@
         "id": "PT12",
         "name": "Portalegre"
       },
-      "id": 2
+      "id": 2,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -2751,7 +2753,18 @@
         "id": "PT16",
         "name": "Viana do Castelo"
       },
-      "id": 3
+      "id": 3,
+      "institutions" :[
+        {
+          "type": "Social",
+          "name": "Associação de Dadores de Sangue da Meadela",
+          "description": "Doação de sangue, empréstimo de equipamento, iniciativas de carácter social e sensibilização.",
+          "website": "https://www.facebook.com/p/Associa%C3%A7%C3%A3o-de-Dadores-de-Sangue-Meadela-100064141235508/?locale=pt_PT",
+          "email": "adsfmeadela@sapo.pt",
+          "address": "R. da Bouça Longa 196, 4900-651 Viana do Castelo",
+          "phone": "+351 962 780 889"
+        }
+      ]
     },
     {
       "geometry": {
@@ -3811,7 +3824,8 @@
         "id": "PT05",
         "name": "Castelo Branco"
       },
-      "id": 4
+      "id": 4,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -4739,7 +4753,8 @@
         "id": "PT09",
         "name": "Guarda"
       },
-      "id": 5
+      "id": 5,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -5491,7 +5506,8 @@
         "id": "PT04",
         "name": "Bragança"
       },
-      "id": 6
+      "id": 6,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -6311,7 +6327,44 @@
         "id": "PT17",
         "name": "Vila Real"
       },
-      "id": 7
+      "id": 7,
+      "institutions" :[
+        {
+          "type": "Animal",
+          "name": "Associação Companhia dos Animais Abandonados – Companhia dos Animais",
+          "website": "https://www.facebook.com/CompanhiadosAnimais.PR",
+          "email": "companhiadosanimais.pr@gmail.com",
+          "donations": [
+            "MBWay: +351 966 895 475"
+          ]
+        },
+        {
+          "type": "Social",
+          "name": "Associação Miguel Torga - São Martinho de Antas",
+          "description": "IPSS sem fins lucrativos situada na Freguesia de São Martinho de Antas (Terra Natal do Poeta e Escritor Miguel Torga), pertencente ao Concelho de Sabrosa, Distrito de Vila Real, inserida na Região Demarcada do Douro. A Instituição tem por Missão promover o Apoio Social ao nível da satisfação das Atividades de Vida Diária dos seus utentes bem como a promoção da qualidade de vida e o bem estar dos mesmos.",
+          "website": "https://amigueltorga.wixsite.com/ipss",
+          "email": "amigueltorga@gmail.com",
+          "address": "Av. Nossa Sra. da Azinheira 2, 5060-427 S. Martinho de Anta",
+          "phone": "259 937 260",
+          "donations": [
+            "https://amigueltorga.wixsite.com/ipss/blank-2"
+          ]
+        },
+        {
+          "type": "Social",
+          "name": "APAV",
+          "description": "Organização sem fins lucrativos presente em todo o país, que apoia, de forma individualizada, qualificada e humanizada, vítimas de crimes, através da prestação de serviços gratuitos e confidenciais. Trabalha para que em Portugal o estatuto da vítima de crime seja plenamente reconhecido, valorizado e efetivo. A sua missão é apoiar as vítimas de crime, as suas famílias e amigos, prestando-lhes serviços de qualidade, gratuitos e confidenciais e contribuir para o aperfeiçoamento das políticas públicas, sociais e privadas centradas no estatuto da vítima.",
+          "website": "https://apav.pt/apav_v3/index.php/pt/",
+          "email": "apav.vilareal@apav.pt",
+          "address": "Largo Conde de Amarante 3, 5000-529 Vila Real",
+          "phone": "259 375 521",
+          "donations": [
+            "http://www.apav.pt/donativos",
+            "IBAN: PT50.0036.0000.99105902803.37",
+            "MBWay: +351 967 116 952"
+          ]
+        } 
+      ]
     },
     {
       "geometry": {
@@ -7047,7 +7100,8 @@
         "id": "PT03",
         "name": "Braga"
       },
-      "id": 8
+      "id": 8,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -7837,7 +7891,8 @@
         "id": "PT08",
         "name": "Faro"
       },
-      "id": 9
+      "id": 9,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -9145,7 +9200,8 @@
         "id": "PT02",
         "name": "Beja"
       },
-      "id": 10
+      "id": 10,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -10317,7 +10373,8 @@
         "id": "PT15",
         "name": "Setúbal"
       },
-      "id": 11
+      "id": 11,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -10899,7 +10956,30 @@
         "id": "PT11",
         "name": "Lisboa"
       },
-      "id": 12
+      "id": 12,
+      "institutions" : [
+        {
+          "type" : "Ambiental",
+          "name" : "RYSE",
+          "description" : "Associação juvenil fundada em 2022, que pretende afirmar o papel da geração jovem no caminho para um planeta mais sustentável. Nasceu da vontade de mobilizar a comunidade universitária a nível nacional, com o intuito de desenvolver projetos focados na melhoria do desempenho de Portugal no cumprimento dos Objetivos para o Desenvolvimento Sustentável (ODS). Potencia, desta forma, novas relações entre jovens de diferentes zonas e áreas de estudo, promovendo a pluralidade de ideias.",
+          "website" : "https://www.ryse.pt/",
+          "email" : "geral@ryse.pt"
+        },
+        {
+          "type" : "Social",
+          "name" : "APAV",
+          "description" : "Organização sem fins lucrativos presente em todo o país, que apoia, de forma individualizada, qualificada e humanizada, vítimas de crimes, através da prestação de serviços gratuitos e confidenciais. Trabalha para que em Portugal o estatuto da vítima de crime seja plenamente reconhecido, valorizado e efetivo. A sua missão  é apoiar as vítimas de crime, as suas famílias e amigos, prestando-lhes serviços de qualidade, gratuitos e confidenciais e contribuir para o aperfeiçoamento das políticas públicas, sociais e privadas centradas no estatuto da vítima.",
+          "website" : "http://www.apav.pt/",
+          "email" : "apav.sede@apav.pt",
+          "adress" : "R. José Estêvão 135 A, 1150-201 Lisboa",
+          "phone" : "259 375 521",
+          "donations" : [
+            "http://www.apav.pt/donativos",
+            "IBAN: PT50.0036.0000.99105902803.37",
+            "MBWay: +351 967 116 952"
+          ]
+        }
+      ]
     },
     {
       "geometry": {
@@ -12195,7 +12275,8 @@
         "id": "PT14",
         "name": "Santarém"
       },
-      "id": 13
+      "id": 13,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -13091,7 +13172,8 @@
         "id": "PT10",
         "name": "Leiria"
       },
-      "id": 14
+      "id": 14,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -14107,7 +14189,8 @@
         "id": "PT06",
         "name": "Coimbra"
       },
-      "id": 15
+      "id": 15,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -14943,7 +15026,8 @@
         "id": "PT01",
         "name": "Aveiro"
       },
-      "id": 16
+      "id": 16,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -15511,7 +15595,8 @@
         "id": "PT13",
         "name": "Porto"
       },
-      "id": 17
+      "id": 17,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -15929,7 +16014,8 @@
         "id": "PT30",
         "name": "Madeira"
       },
-      "id": 18
+      "id": 18,
+      "institutions" :[]
     },
     {
       "geometry": {
@@ -16991,7 +17077,30 @@
         "id": "PT20",
         "name": "Açores"
       },
-      "id": 19
+      "id": 19,
+      "institutions" :[
+        {
+          "type": "Social",
+          "name": "ASSOCIAÇÃO DE DADORES DE SANGUE DA ILHA TERCEIRA",
+          "description": "Associação com o único objetivo a proteção de vidas humanas, por meio da doação desinteressada de sangue com fins terapêuticos a feridos e doentes, seja qual for a sua nacionalidade, raça, credo político ou religioso, condição social ou económica.",
+          "website": "https://www.facebook.com/p/Associa%C3%A7%C3%A3o-de-Dadores-de-Sangue-da-Ilha-Terceira-100064479108719/?locale=pt_PT",
+          "email": "adsaha@gmail.com",
+          "adress": "Angra do Heroísmo, Portugal, 9700-121"
+        },
+        {
+          "type": "Social",
+          "name": "AMIZADE 2000 - ASSOCIAÇÃO DE APOIO AOS DEFICIENTES E INADAPTADOS DO NORDESTE",
+          "description": "Promove a autonomia pessoal e social das pessoas com deficiência residentes no concelho do Nordeste, através de um serviço individualizado e abrangente.",
+          "website": "https://amizade2000.pt/",
+          "email": "info.amizade2000@gmail.com",
+          "adress": "Rua dos Barreiros, n.º 20, 9630-105 Lomba da Fazenda, Nordeste",
+          "phone": "296 486 220",
+          "donations": [
+            "https://amizade2000.pt/apresentacao/"
+          ]
+        }
+            
+      ]
     },
     {
       "geometry": {
@@ -17771,7 +17880,31 @@
         "id": "PT18",
         "name": "Viseu"
       },
-      "id": 20
+      "id": 20,
+      "institutions" :[
+        {
+          "type": "Social",
+          "name": "Portugal AVC - União de Sobreviventes, Familiares e Amigos",
+          "description": "Associação de âmbito nacional, protagonizada pelos próprios sobreviventes de AVC, e englobando também familiares, cuidadores e profissionais de saúde. Tem por objetivo contribuir para a resposta às necessidades sentidas pelos sobreviventes de AVC e seus familiares, bem como a promoção de iniciativas que visem, por um lado, contribuir para a prevenção do AVC e suas consequências. Tendo presente que o AVC é a primeira causa de mortalidade e, sobretudo, de incapacidade permanente em Portugal.",
+          "website": "http://www.portugalavc.pt/",
+          "email": "info@portugalavc.pt",
+          "phone": "+351 928 060 600",
+          "donations": [
+            "https://www.portugalavc.pt/contribuir"
+          ]
+        },
+        {
+          "type": "Social",
+          "name": "Cáritas Diocesana de Viseu",
+          "description": "Instituição oficial da Igreja Católica, destinada à promoção e exercício da ação social na Diocese. Pretende minimizar os problemas, desigualdades e injustiças sociais das pessoas mais vulneráveis, em situação de pobreza e exclusão social.",
+          "website": "https://www.caritasviseu.pt/",
+          "email": "geral@caritasviseu.pt",
+          "phone": "232 420 340",
+          "donations": [
+            "https://www.caritasviseu.pt/colabore/campanhas-de-donativos/"
+          ]
+        }
+      ]
     },
     {
       "geometry": {

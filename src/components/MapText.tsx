@@ -8,6 +8,17 @@ import SideBar from './SideBar';
 
 const MapText: React.FC = () => {
   const [selectedRegion, setSelectedRegion] = useState<any | null>(null);
+  const [showAll, setShowAll] = useState(false);
+
+  const handleClearRegion = () => {
+    setSelectedRegion("ALL");
+    setShowAll(true);
+  };
+
+  const handleSelectedRegion = (region: any) => {
+    setSelectedRegion(region);
+    setShowAll(false);
+  };
 
   return (
     <div id="map-section"
@@ -48,7 +59,7 @@ const MapText: React.FC = () => {
           <MadeiraMap 
             tooltipId="madeira-tooltip" 
             selectedRegion={selectedRegion}
-            setSelectedRegion={setSelectedRegion}
+            setSelectedRegion={handleSelectedRegion}
           />
         </SlideInAnimation>
 
@@ -59,7 +70,7 @@ const MapText: React.FC = () => {
           <AcoresMap 
             tooltipId="acores-tooltip" 
             selectedRegion={selectedRegion}
-            setSelectedRegion={setSelectedRegion}
+            setSelectedRegion={handleSelectedRegion}
           />
         </SlideInAnimation>
 
@@ -70,19 +81,21 @@ const MapText: React.FC = () => {
           <PortugalMap
             tooltipId="portugal-tooltip"
             selectedRegion={selectedRegion}
-            setSelectedRegion={setSelectedRegion}
+            setSelectedRegion={handleSelectedRegion}
           />
         </SlideInAnimation>
       </div>
 
       {/* Sidebar */}
-      
-        {selectedRegion && (
-          <SideBar
-            region={selectedRegion}
-            onClose={() => setSelectedRegion(null)}
-          />
-        )}
+      {selectedRegion && (
+        <SideBar
+          region={selectedRegion}
+          onClose={() => setSelectedRegion(null)}
+          onClearRegion={handleClearRegion}
+          showAll={showAll}
+          setShowAll={setShowAll}
+        />
+      )}
     </div>
   );
 };
