@@ -36,7 +36,7 @@ const MapText: React.FC = () => {
           </h2>
         </div>
         <p className="text-xl mb-8 text-justify pr-48">
-        Reunimos mais de <span className="font-bold">50 associações</span> 
+        Reunimos mais de <span className="font-bold">50 associações </span> 
         de diferentes áreas de impacto num único mapa interativo, em constante 
         atualização, abrangendo todo o território nacional, de Norte a Sul de 
         Portugal. Se queres ajudar, mas não sabes por onde começar, basta explorares 

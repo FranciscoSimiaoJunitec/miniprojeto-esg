@@ -10,8 +10,7 @@
             "https://www.caritasaveiro.pt/colabore/campanhas-de-donativos/"
         ],
         "region": "Aveiro",
-        "id": 1,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 1
     },
     {
         "type": "Social",
@@ -24,8 +23,7 @@
             "https://casaveracruz.pt/amigo/mecenato/"
         ],
         "region": "Aveiro",
-        "id": 1,
-        "logo": "/logos/Casa Vera Cruz.svg"
+        "id": 1
     },
     {
         "type": "Ambiental",
@@ -41,8 +39,7 @@
             "MBWAY: 964785731"
         ],
         "region": "Beja",
-        "id": 2,
-        "logo": "/logos/Associação Margem Esquerda Do Guadiana - Proteção Do Bosque Mediterrânico.jpg"
+        "id": 2
     },
     {
         "type": "Animal",
@@ -55,8 +52,7 @@
             "https://www.facebook.com/sosanimaisdemoura/about_details?locale=pt_PT"
         ],
         "region": "Beja",
-        "id": 2,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 2
     },
     {
         "type": "Social",
@@ -70,8 +66,7 @@
             "gofund.me/06375607"
         ],
         "region": "Beja",
-        "id": 2,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 2
     },
     {
         "type": "Social",
@@ -85,8 +80,7 @@
             "https://www.vidanorte.org/como-ajudar/"
         ],
         "region": "Braga",
-        "id": 3,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 3
     },
     {
         "type": "Social",
@@ -97,8 +91,7 @@
         "phone": "273 382 506",
         "address": "Avenida da Dinastia de Bragança, n.º 19",
         "region": "Bragança",
-        "id": 4,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 4
     },
     {
         "type": "Social",
@@ -109,8 +102,7 @@
         "phone": "+351 966 320 986",
         "address": "Edifício Amato Lusitano 7A, Largo do Matadouro, 6000-106 Castelo Branco",
         "region": "Castelo Branco",
-        "id": 5,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 5
     },
     {
         "type": "Social",
@@ -123,8 +115,7 @@
             "https://acreditar.org.pt/colaborar/donativo-financeiro/"
         ],
         "region": "Coimbra",
-        "id": 6,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 6
     },
     {
         "type": "Social",
@@ -138,8 +129,7 @@
             "https://www.adavcoimbra.pt/paginas/ajudar/"
         ],
         "region": "Coimbra",
-        "id": 6,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 6
     },
     {
         "type": "Social",
@@ -155,8 +145,7 @@
             "MBWay: +351 967 116 952"
         ],
         "region": "Coimbra",
-        "id": 6,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 6
     },
     {
         "type": "Social",
@@ -170,8 +159,7 @@
             "https://caritascoimbra.pt/colabore/campanhas-de-donativos/"
         ],
         "region": "Coimbra",
-        "id": 6,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 6
     },
     {
         "type": "Cultural",
@@ -185,8 +173,7 @@
             "https://gare.pt/envolva-se-com-a-gare/"
         ],
         "region": "Évora",
-        "id": 7,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 7
     },
     {
         "type": "Social",
@@ -200,8 +187,7 @@
             "https://www.protecaoarapariga.pt/"
         ],
         "region": "Faro",
-        "id": 8,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 8
     },
     {
         "type": "Animal",
@@ -215,8 +201,7 @@
             "https://www.amigofielbombarral.com/donate/"
         ],
         "region": "Leiria",
-        "id": 10,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 10
     },
     {
         "type": "Animal",
@@ -230,8 +215,7 @@
             "https://azlfa.com/doacoes/"
         ],
         "region": "Leiria",
-        "id": 10,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 10
     },
     {
         "type": "Social",
@@ -246,8 +230,7 @@
             "IBAN: PT50 0033 0000 4533 6761 3250 5 "
         ],
         "region": "Leiria",
-        "id": 10,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 10
     },
     {
         "type": "Ambiental",
@@ -256,8 +239,7 @@
         "website": "https://www.ryse.pt/",
         "email": "geral@ryse.pt",
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -271,8 +253,7 @@
             "https://aparf.pt/como-fazer-parte-de-um-projecto/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -288,8 +269,7 @@
             "MBWay: +351 967 116 952"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -299,8 +279,7 @@
         "email": "contacto@aproximar.pt",
         "address": "Rua do Paraíso, loja n.º 2 2610-136 Alfragide ",
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -313,8 +292,7 @@
             "https://apsa.org.pt/pt/apoiar"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -328,8 +306,7 @@
             "https://crescerser.org/fazer-donativo/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -343,8 +320,7 @@
             "https://www.kosmicare.org/funder/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -358,8 +334,7 @@
             "http://www.donativos.cvidaepaz.pt/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -372,8 +347,7 @@
             "https://earlybird.pt/voluntariado-individual/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -387,8 +361,7 @@
             "https://makeawish.pt/como-ajudar/fazer-um-donativo/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -404,8 +377,7 @@
             "MBWay: +351 933 229 151"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -419,8 +391,7 @@
             "https://www.pressleyridge.pt/pt/pages/como-ajudar"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -433,8 +404,7 @@
             "https://www.sosvozamiga.org/pt/contribua-para-as-causas-da-saude-mental-e-prevencao-do-suicidio-apoiando-a-nossa-linha/"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Social",
@@ -447,8 +417,7 @@
             "https://spem.pt/faca-uma-doacao/#faca-uma-doacao"
         ],
         "region": "Lisboa",
-        "id": 11,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 11
     },
     {
         "type": "Animal",
@@ -462,8 +431,7 @@
             "https://animaisderua.org/donation"
         ],
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     },
     {
         "type": "Social",
@@ -477,8 +445,7 @@
             "https://acreditar.org.pt/colaborar/donativo-financeiro/"
         ],
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     },
     {
         "type": "Social",
@@ -489,8 +456,7 @@
         "phone": "225 104 511",
         "address": "Rua Professor Bento de Jesus Caraça, n.º 248",
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     }, 
     {
         "type": "Social",
@@ -504,8 +470,7 @@
             "https://www.apofen.pt/pt/socio.php"
         ],
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     },
     {
         "type": "Social",
@@ -521,8 +486,7 @@
             "IBAN: PT50 0036 0046 9910 0230 1045 5"
         ],
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     },
     {
         "type": "Social",
@@ -536,8 +500,7 @@
             "https://www.associacao1gestosolidario.pt/apoie-nos"
         ],
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     },
     {
         "type": "Social",
@@ -548,8 +511,7 @@
         "phone": "+351 964 899 958",
         "address": "Praça D. Filipa de Lencastre 22 1º Esq, sala 26, 4050-259 Porto",
         "region": "Porto",
-        "id": 13,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 13
     },
     {
         "type": "Social",
@@ -563,8 +525,7 @@
             "https://amizade2000.pt/apresentacao/"
         ],
         "region": "R.A Acores",
-        "id": 20,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 20
     },
     {
         "type": "Social",
@@ -574,8 +535,7 @@
         "email": "adsaha@gmail.com",
         "address": "Angra do Heroísmo, Portugal, 9700-121",
         "region": "R.A Acores",
-        "id": 20,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 20
     },
     {
         "type": "Animal",
@@ -586,8 +546,7 @@
         "phone": "243 704 740",
         "address": " Lote 13 Zona Industrial de, 2070-681 Vila Chã de Ourique",
         "region": "Santarém",
-        "id": 14,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 14
     },
     {
         "type": "Animal",
@@ -597,8 +556,7 @@
         "email": "apda.tn@gmail.com",
         "address": " Estr. do Caramulo 2350, Parceiros de Igreja",
         "region": "Santarém",
-        "id": 14,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 14
     },
     {
         "type": "Animal",
@@ -610,8 +568,7 @@
             "https://patinhasderua-riomaior.webnode.pt/contacto/"
         ],
         "region": "Santarém",
-        "id": 14,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 14
     },
     {
         "type": "Social",
@@ -625,8 +582,7 @@
             "https://aadpcmcsm.wixsite.com/incluir/como-apoiar"
         ],
         "region": "Santarém",
-        "id": 14,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 14
     },
     {
         "type": "Social",
@@ -640,8 +596,7 @@
             "https://www.appda-setubal.com/Menu/Como-Apoiar/18"
         ],
         "region": "Setúbal",
-        "id": 15,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 15
     },
     {
         "type": "Social",
@@ -655,8 +610,7 @@
             "https://gofund.me/9284a97d"
         ],
         "region": "Setúbal",
-        "id": 15,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 15
     },
     {
         "type": "Social",
@@ -667,8 +621,7 @@
         "phone": "+351 968 180 442",
         "address": "R. Miguel Torga 72 Fração A, 2970-311 Sesimbra",
         "region": "Setúbal",
-        "id": 15,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 15
     },
     {
         "type": "Social",
@@ -679,8 +632,7 @@
         "phone": "+351 962 780 889",
         "address": " R. da Bouça Longa 196, 4900-651 Viana do Castelo",
         "region": "Viana do Castelo",
-        "id": 16,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 16
     },
     {
         "type": "Animal",
@@ -691,8 +643,7 @@
             "MBWay: +351 966 895 475."
         ],
         "region": "Vila Real",
-        "id": 17,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 17
     },
     {
         "type": "Social",
@@ -708,8 +659,7 @@
             "MBWay: +351 967 116 952"
         ],
         "region": "Vila Real",
-        "id": 17,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 17
     },
     {
         "type": "Social",
@@ -723,8 +673,7 @@
             "https://amigueltorga.wixsite.com/ipss/blank-2"
         ],
         "region": "Vila Real",
-        "id": 17,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 17
     },
     {
         "type": "Social",
@@ -738,8 +687,7 @@
             "https://www.caritasviseu.pt/colabore/campanhas-de-donativos/"
         ],
         "region": "Viseu",
-        "id": 18,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 18
     },
     {
         "type": "Social",
@@ -752,7 +700,6 @@
             "https://www.portugalavc.pt/contribuir"
         ],
         "region": "Viseu",
-        "id": 18,
-        "logo": "/logos/Cáritas Diocesana de Aveiro.png"
+        "id": 18
     }
 ]
