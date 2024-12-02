@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import SlideInAnimation from './animations/MapSlide';
 import InstitutionBoard from './InstitutionBoard';

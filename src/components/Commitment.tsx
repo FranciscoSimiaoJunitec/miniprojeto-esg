@@ -18,9 +18,9 @@ const Commitment: React.FC = () => {
         transition={{ duration: 1.6, ease: "easeOut" }}
         className="w-full"
       >
-        <blockquote className="italic text-lg md:text-3xl text-center mb-8 pb-8">
+        <blockquote className="italic text-base md:text-3xl text-center mb-8 pb-8">
           "Numa geração que sonha com um futuro melhor, na JUNITEC transformamos ideias em ações que impactam o presente."
-          <span className="block mt-4 text-lg md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
+          <span className="block mt-4 text-sm md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
         </blockquote>
       </motion.div>
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center relative">
@@ -30,19 +30,18 @@ const Commitment: React.FC = () => {
         
         <SlideRightAnimation
           direction="right"
-          className="relative z-10 md:w-4/5 max-w-xl bg-[#175FAAED] text-white p-8 shadow-lg flex flex-col justify-start transform translate-y-10 ml-4"
+          className="relative z-10 md:w-4/5 max-w-xl bg-[#175FAAED] text-white p-8 shadow-lg flex flex-col justify-start transform md:translate-y-10 ml-4"
         >
-          <h2 className="text-3xl font-bold mb-8 text-start">O NOSSO COMPROMISSO</h2>
-          <p className="text-l text-justify pr-20 ">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-start">O NOSSO COMPROMISSO</h2>
+          <p className="text-sm md:text-lg text-justify pr-20">
             Acreditamos que, mais do que júnior empresários, somos agentes de transformação, responsáveis por contribuir para um futuro melhor. Por isso, criámos um plano de ação que reflete o nosso compromisso com a <span className="font-bold">responsabilidade social</span>, onde, além de <span className="font-bold">doações</span> monetárias e em espécie, promovemos um programa interno de <span className="font-bold">voluntariado</span>, incentivando os nossos membros a envolver-se em iniciativas que impactam positivamente a sociedade.
           </p>
-          <p className="text-l text-justify pr-20 pt-10 ">
+          <p className="text-sm md:text-lg text-justify pr-20 pt-10">
             Neste ano, reforçámos esse compromisso. Elaborámos o nosso primeiro <span className="font-bold">relatório ESG</span>, consolidando práticas que integram os pilares Ambiental, Social e Governança, em parceria com entidades de renome, como a <span className="font-bold">Veolia</span> e a <span className="font-bold">A.T Kearney.</span> Esta abordagem traduz a nossa dedicação em atuar de forma consciente, deixando uma marca positiva no presente e inspirando as gerações futuras.
           </p>
         </SlideRightAnimation>
-
         
-        <MoveUpAnimation direction="up" className="absolute top-[calc(50%-50px)] left-[calc(50%-50px)] md:w-3/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-10 md:-translate-x-16 z-20">
+        <MoveUpAnimation direction="up" className="relative md:absolute md:top-[calc(50%-50px)] md:left-[calc(50%-50px)] md:w-3/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-10 md:-translate-x-16 z-20 mt-8 md:mt-0">
           <iframe
             width="100%"
             height="100%"
