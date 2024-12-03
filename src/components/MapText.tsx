@@ -14,7 +14,7 @@ const MapText: React.FC = () => {
   };
 
   return (
-    <div id="map-section"
+    <section id="map-section"
       className="min-h-screen flex flex-col md:flex-row items-start justify-between bg-gradient-to-b from-[#3e7ab9] to-[#053581] p-8 text-white relative"
     >
       {/* Text Section */}
@@ -87,7 +87,7 @@ const MapText: React.FC = () => {
           onClearRegion={() => setSelectedRegion(0)}
         />
       )}
-    </div>
+    </section>
   );
 };
 
