@@ -9,9 +9,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8">
+    <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
       <div className="container mx-auto flex items-center justify-between">
-        <img src={`${process.env.PUBLIC_URL}/prancheta.svg`} alt="logo" className="h-8" />
+        <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="h-8" />
         <button className="block md:hidden" onClick={toggleMenu}>
           <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
