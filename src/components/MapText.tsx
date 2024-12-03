@@ -8,16 +8,9 @@ import SideBar from './SideBar';
 
 const MapText: React.FC = () => {
   const [selectedRegion, setSelectedRegion] = useState<any | null>(null);
-  const [showAll, setShowAll] = useState(false);
 
-  const handleClearRegion = () => {
-    setSelectedRegion("ALL");
-    setShowAll(true);
-  };
-
-  const handleSelectedRegion = (region: any) => {
+  const handleSelectedRegion = (region: number) => {
     setSelectedRegion(region);
-    setShowAll(false);
   };
 
   return (
@@ -87,13 +80,11 @@ const MapText: React.FC = () => {
       </div>
 
       {/* Sidebar */}
-      {selectedRegion && (
+      {selectedRegion !== null && (
         <SideBar
-          region={selectedRegion}
+          regionID={selectedRegion}
           onClose={() => setSelectedRegion(null)}
-          onClearRegion={handleClearRegion}
-          showAll={showAll}
-          setShowAll={setShowAll}
+          onClearRegion={() => setSelectedRegion(0)}
         />
       )}
     </div>

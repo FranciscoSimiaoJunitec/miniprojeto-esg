@@ -30,7 +30,7 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({
           {({ geographies }) =>
             geographies.map((geo) => {
               const isPortugal = geo.properties.id.startsWith('PT');
-              const isSelected = selectedRegion?.properties?.id === geo.properties.id;
+              const isSelected = selectedRegion === geo.id;
 
               return (
                 <Geography
@@ -48,7 +48,7 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({
                   }}
                   onClick={() => {
                     if (isPortugal) {
-                      setSelectedRegion(geo); // Pass full region object
+                      setSelectedRegion(geo.id); // Pass full region object
                     }
                   }}
                   style={{

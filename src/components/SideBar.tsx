@@ -5,16 +5,16 @@ import InstitutionBoard from './InstitutionBoard';
 import allInstitutions from '../assets/allInstitutions.json';
 
 type SideBarProps = {
-  region: any | null;
+  regionID: number | null;
   onClose: () => void;
   onClearRegion: () => void;
-  showAll: boolean;
-  setShowAll: (value: boolean) => void;
 };
 
-const SideBar: React.FC<SideBarProps> = ({ region, onClose, onClearRegion, showAll, setShowAll}) => {
+const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion}) => {
   const [selectedFilter, setSelectedFilter] = useState<string | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const region = allInstitutions.find((region) => region.id === regionID);
 
   const filters = ['---', 'Social', 'Cultural', 'Ambiental', 'Animal'];
 
@@ -24,7 +24,6 @@ const SideBar: React.FC<SideBarProps> = ({ region, onClose, onClearRegion, showA
   };
 
   const handleShowAll = () => {
-    setShowAll(true);
     onClearRegion();
   };
 
@@ -44,8 +43,8 @@ const SideBar: React.FC<SideBarProps> = ({ region, onClose, onClearRegion, showA
       </button>
       <div className="mt-12">
         <div className='flex flex-row justify-between pr-12'>
-          <h1 className="text-4xl font-bold mb-4">{showAll ? "Portugal" : region.properties.name.toUpperCase()}</h1>
-          {!showAll &&
+          <h1 className="text-4xl font-bold mb-4">{regionID==0 ? "Portugal" : region?.region.toUpperCase()}</h1>
+          {regionID!==0  &&
             <p
               className="pt-4 hover:underline cursor-pointer"
               onClick={handleShowAll}
@@ -85,7 +84,7 @@ const SideBar: React.FC<SideBarProps> = ({ region, onClose, onClearRegion, showA
           </div>
         </div>
         <InstitutionBoard
-          institutions={showAll ? allInstitutions : region.institutions}
+          regionID={region ? region.id : 0}
           filter={selectedFilter}
         />
       </div>

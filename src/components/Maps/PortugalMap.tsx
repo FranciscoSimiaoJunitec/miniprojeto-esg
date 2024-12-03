@@ -32,7 +32,7 @@ const PortugalMap: React.FC<PortugalMapProps> = ({
           {({ geographies }) =>
             geographies.map((geo) => {
               const isPortugal = geo.properties.id.startsWith('PT');
-              const isSelected = selectedRegion === geo;
+              const isSelected = selectedRegion === geo.id;
 
               return (
                 <Geography
@@ -50,7 +50,7 @@ const PortugalMap: React.FC<PortugalMapProps> = ({
                   }}
                   onClick={() => {
                     if (isPortugal) {
-                      setSelectedRegion(geo)};
+                      setSelectedRegion(geo.id)};
                     }
                   }
                   style={{

@@ -1335,22 +1335,7 @@
         "id": "PT07",
         "name": "Évora"
       },
-      "id": 1,
-      "institutions" :[
-        {
-          "type": "Cultural",
-          "name": "GARE - Associação para a Promoção de uma Cultura de Segurança Rodoviária",
-          "description": "Tem como Missão intervir cívica e socialmente na comunidade no âmbito de uma cultura de segurança rodoviária, assente nos seguintes objetivos: Favorecer a mudança social e individual de comportamentos e atitudes com vista à diminuição de riscos inerentes ao ambiente rodoviário; Promover a Saúde e uma Mobilidade Sustentável; Promover uma Cidadania Ativa e Global e o respeito pelos Direitos Humanos.",
-          "website": "https://gare.pt/",
-          "email": "geral@gare.pt",
-          "phone": "266785498",
-          "address": "Horta das Figueiras 7005-500 Évora",
-          "donations": [
-              "https://gare.pt/envolva-se-com-a-gare/"
-          ]
-      
-      }
-      ]
+      "id": 1
     },
     {
       "geometry": {
@@ -2310,8 +2295,7 @@
         "id": "PT12",
         "name": "Portalegre"
       },
-      "id": 2,
-      "institutions" :[]
+      "id": 2
     },
     {
       "geometry": {
@@ -2767,18 +2751,7 @@
         "id": "PT16",
         "name": "Viana do Castelo"
       },
-      "id": 3,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "Associação de Dadores de Sangue da Meadela",
-          "description": "Doação de sangue, empréstimo de equipamento, iniciativas de carácter social e sensibilização.",
-          "website": "https://www.facebook.com/p/Associa%C3%A7%C3%A3o-de-Dadores-de-Sangue-Meadela-100064141235508/?locale=pt_PT",
-          "email": "adsfmeadela@sapo.pt",
-          "address": "R. da Bouça Longa 196, 4900-651 Viana do Castelo",
-          "phone": "+351 962 780 889"
-        }
-      ]
+      "id": 3
     },
     {
       "geometry": {
@@ -3838,18 +3811,7 @@
         "id": "PT05",
         "name": "Castelo Branco"
       },
-      "id": 4,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "ACTIEDUCA ( V.A. Associação de Apoio a crianças e Jovens)",
-          "description": "Posiciona-se como complemento ao horário escolar, assegurando uma ocupação correta, segura, responsável e divertida para as crianças e jovens. Pretende garantir um futuro promissor às próximas gerações, contribuindo desde o início para a sua formação base através do seu desenvolvimento social, formativo, emocional e autónomo.",
-          "website": "https://www.facebook.com/Actieduca",
-          "email": "actieduc@gmail.com",
-          "phone": "+351 966 320 986",
-          "address": "Edifício Amato Lusitano 7A, Largo do Matadouro, 6000-106 Castelo Branco"
-      }
-      ]
+      "id": 4
     },
     {
       "geometry": {
@@ -4777,8 +4739,7 @@
         "id": "PT09",
         "name": "Guarda"
       },
-      "id": 5,
-      "institutions" :[]
+      "id": 5
     },
     {
       "geometry": {
@@ -5530,18 +5491,7 @@
         "id": "PT04",
         "name": "Bragança"
       },
-      "id": 6,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "ASCUDT - Associação Sócio Cultural dos Deficientes de Trás-os-Montes",
-          "description": "Fundada em 1994, presta serviços a pessoas com deficiência e incapacidade, através do Centro de Atividades e Capacitação para a Inclusão; Serviço de Apoio Domiciliário, 1 Lar Residencial, 2 Residências de Autonomização e Inclusão; 1 Centro de Reabilitação e Formação Profissional e um Centro de Recursos. Intervém em cuidados básicos de vida, terapias de reabilitação psicomotora, sensorial e psicossocial, orientação educativa/formativa, competências digitais e desenvolvimento pessoal/social/profissional.",
-          "website": "https://ascudt.org.pt/index/",
-          "email": "geral@ascudt.org.pt",
-          "phone": "273 382 506",
-          "address": "Avenida da Dinastia de Bragança, n.º 19"
-      }
-      ]
+      "id": 6
     },
     {
       "geometry": {
@@ -6361,44 +6311,7 @@
         "id": "PT17",
         "name": "Vila Real"
       },
-      "id": 7,
-      "institutions" :[
-        {
-          "type": "Animal",
-          "name": "Associação Companhia dos Animais Abandonados – Companhia dos Animais",
-          "website": "https://www.facebook.com/CompanhiadosAnimais.PR",
-          "email": "companhiadosanimais.pr@gmail.com",
-          "donations": [
-            "MBWay: +351 966 895 475"
-          ]
-        },
-        {
-          "type": "Social",
-          "name": "Associação Miguel Torga - São Martinho de Antas",
-          "description": "IPSS sem fins lucrativos situada na Freguesia de São Martinho de Antas (Terra Natal do Poeta e Escritor Miguel Torga), pertencente ao Concelho de Sabrosa, Distrito de Vila Real, inserida na Região Demarcada do Douro. A Instituição tem por Missão promover o Apoio Social ao nível da satisfação das Atividades de Vida Diária dos seus utentes bem como a promoção da qualidade de vida e o bem estar dos mesmos.",
-          "website": "https://amigueltorga.wixsite.com/ipss",
-          "email": "amigueltorga@gmail.com",
-          "address": "Av. Nossa Sra. da Azinheira 2, 5060-427 S. Martinho de Anta",
-          "phone": "259 937 260",
-          "donations": [
-            "https://amigueltorga.wixsite.com/ipss/blank-2"
-          ]
-        },
-        {
-          "type": "Social",
-          "name": "APAV",
-          "description": "Organização sem fins lucrativos presente em todo o país, que apoia, de forma individualizada, qualificada e humanizada, vítimas de crimes, através da prestação de serviços gratuitos e confidenciais. Trabalha para que em Portugal o estatuto da vítima de crime seja plenamente reconhecido, valorizado e efetivo. A sua missão é apoiar as vítimas de crime, as suas famílias e amigos, prestando-lhes serviços de qualidade, gratuitos e confidenciais e contribuir para o aperfeiçoamento das políticas públicas, sociais e privadas centradas no estatuto da vítima.",
-          "website": "https://apav.pt/apav_v3/index.php/pt/",
-          "email": "apav.vilareal@apav.pt",
-          "address": "Largo Conde de Amarante 3, 5000-529 Vila Real",
-          "phone": "259 375 521",
-          "donations": [
-            "http://www.apav.pt/donativos",
-            "IBAN: PT50.0036.0000.99105902803.37",
-            "MBWay: +351 967 116 952"
-          ]
-        } 
-      ]
+      "id": 7
     },
     {
       "geometry": {
@@ -7134,21 +7047,7 @@
         "id": "PT03",
         "name": "Braga"
       },
-      "id": 8,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "Vida Norte",
-          "description": "Fundada em 1999, tem como missão apoiar grávidas e bebés em situação de fragilidade, garantindo um acompanhamento de proximidade, com vista à capacitação da família e à construção de um projeto de vida autónomo, responsável e feliz. Opera no Porto e em Braga.",
-          "website": "https://www.vidanorte.org/home/",
-          "email": "geral@vidanorte.org",
-          "phone": "+351 934 294 339",
-          "address": "Av. da Liberdade n.º 491",
-          "donations": [
-              "https://www.vidanorte.org/como-ajudar/"
-          ]
-      }
-      ]
+      "id": 8
     },
     {
       "geometry": {
@@ -7938,21 +7837,7 @@
         "id": "PT08",
         "name": "Faro"
       },
-      "id": 9,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "AIPAR Associação de Proteção à Rapariga e à Família",
-          "description": "A AIPAR - Associação de Proteção à Rapariga e à Família promove os direitos das jovens e apoia as suas famílias, focando-se no acolhimento em situações de risco, na inclusão social e na qualificação dos seus recursos. A associação procura ser uma referência pela qualidade dos seus serviços, colaboração com agentes sociais e compromisso com o desenvolvimento regional e internacional.",
-          "website": "https://www.protecaoarapariga.pt/",
-          "email": "proteccaoarapariga@gmail.com",
-          "phone": "+351 965 274 084",
-          "address": " R. Monsenhor Henrique Ferreira da Silva, 8005-137 Faro",
-          "donations": [
-              "https://www.protecaoarapariga.pt/"
-          ]
-      }
-      ]
+      "id": 9
     },
     {
       "geometry": {
@@ -9260,46 +9145,7 @@
         "id": "PT02",
         "name": "Beja"
       },
-      "id": 10,
-      "institutions" :[
-        {
-          "type": "Ambiental",
-          "name": "Associação Margem Esquerda Do Guadiana - Protecção Do Bosque Mediterrânico",
-          "description": "ONG sem fins lucrativos focada na defesa do ambiente, divulgação e valorização do património natural da região portuguesa na margem esquerda do rio Guadiana, através de iniciativas com alunos, agricultores, população sénior e os demais.",
-          "website": "https://www.assmargemesquerdaguadiana.com/",
-          "email": "margemesquerdaguadiana@gmail.com",
-          "phone": "+351 964 785 731",
-          "address": "Rua dos Barrigos n.º 44, 7830-339 Serpa",
-          "donations": [
-              "https://docs.google.com/forms/d/e/1FAIpQLSedrthCxCuJ68v_SEm13Rot5-4y9R8CKy4QjGXE2YKUSxwZIg/viewform",
-              "NIB: PT50 0045 6253 4033 6153 5498 2",
-              "MBWAY: 964785731"
-          ]
-      },
-      {
-          "type": "Animal",
-          "name": "Associação S.O.S. dos Animais de Moura",
-          "description": "Associação de proteção animal dedicada ao resgate e acolhimento de cães abandonados em Moura (Alentejo). Com 80 cães sob a sua guarda, a sua missão é cuidar, tratar, socializar e encaminhá-los para adoções responsáveis. Promovem também a sensibilização contra o abandono e para a melhoria das condições de vida dos animais.",
-          "website": "https://www.facebook.com/sosanimaisdemoura/?locale=pt_PT",
-          "email": "sosdosanimaisdemoura@gmail.com",
-          "address": "Av. do Carmo - Largo da Igreja 7860 - 198 Moura",
-          "donations": [
-              "https://www.facebook.com/sosanimaisdemoura/about_details?locale=pt_PT"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Associação ESTAR",
-          "description": "Atua há cinco anos em Beja no combate à pobreza, apoiando nacionais e estrangeiros com alimentos, roupas, mobiliário e integração laboral. Em 2024, atendeu mais de 1500 pessoas, 83% delas nacionais. Contudo, desde dezembro de 2023, enfrenta falta de financiamento, operando apenas com apoios pontuais. Reconhecida pelo impacto, a associação busca apoio urgente para continuar sua missão.",
-          "website": "https://www.associacaoestar.org/",
-          "email": "estar.associacao@gmail.com",
-          "phone": "+351 964 769 309",
-          "address": "Rua de Angola, 8",
-          "donations": [
-              "gofund.me/06375607"
-          ]
-      }
-      ]
+      "id": 10
     },
     {
       "geometry": {
@@ -10471,42 +10317,7 @@
         "id": "PT15",
         "name": "Setúbal"
       },
-      "id": 11,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "APPDA – Associação Portuguesa para as Perturbações do Desenvolvimento e Autismo de Setúbal",
-          "description": "Tem como missão criar um projeto de vida com qualidade e dignidade para as pessoas com perturbação do espetro do autismo e suas famílias, promovendo e defendendo os seus direitos, de forma a tornar a sociedade mais consciente da solidariedade inclusiva e da cidadania ativa.",
-          "website": "https://www.appda-setubal.com/",
-          "email": " appda-setubal@sapo.pt",
-          "phone": "+351 916 815 707",
-          "address": " R. Amílcar Cabral 16 Loja B, 2900 Setúbal",
-          "donations": [
-              "https://www.appda-setubal.com/Menu/Como-Apoiar/18"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Arte de Sorrir - Centro de Reabilitação Sénior",
-          "description": "Projeto Intergeracional que promove a interação da comunidade entre os Jovens e os Séniores, melhorando a qualidade de vida e consequentemente a saúde.",
-          "website": "https://crsartedesorrir.pt/#",
-          "email": "aartedesorrir7@gmail.com",
-          "phone": "+351 913 813 621",
-          "address": "Avenida Humberto Delgado 43B - Quinta do Conde",
-          "donations": [
-              "https://gofund.me/9284a97d"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "ASHASS - Associação de Solidariedade Humanitária e de Ajuda Social de Sesimbra",
-          "description": "Fundada há três anos, é uma entidade sem fins lucrativos que apoia famílias carenciadas com a entrega mensal de bens alimentares essenciais. Inicialmente planeada para atender 25 famílias, atualmente auxilia 80 famílias, totalizando 234 pessoas, com pedidos em constante crescimento. Apesar de não receber apoio estatal ou da Câmara Municipal, conta com 16 voluntários, uma assistente social e apoio jurídico probono, além de parcerias com empresas como Makro, Aldi, Sumol Compal, Nobre e outras que fornecem doações regulares. Enfrenta desafios com despesas elevadas e logística complexa para atender às crescentes necessidades.",
-          "website": "https://www.facebook.com/profile.php?id=100085873711316",
-          "email": "ashass.direcao@gmail.com",
-          "phone": "+351 968 180 442",
-          "address": "R. Miguel Torga 72 Fração A, 2970-311 Sesimbra"
-      }
-      ]
+      "id": 11
     },
     {
       "geometry": {
@@ -11088,168 +10899,7 @@
         "id": "PT11",
         "name": "Lisboa"
       },
-      "id": 12,
-      "institutions" : [
-        {
-          "type": "Ambiental",
-          "name": "RYSE",
-          "description": "Associação juvenil fundada em 2022, que pretende afirmar o papel da geração jovem no caminho para um planeta mais sustentável. Nasceu da vontade de mobilizar a comunidade universitária a nível nacional, com o intuito de desenvolver projetos focados na melhoria do desempenho de Portugal no cumprimento dos Objetivos para o Desenvolvimento Sustentável (ODS). Potencia, desta forma, novas relações entre jovens de diferentes zonas e áreas de estudo, promovendo a pluralidade de ideias. ",
-          "website": "https://www.ryse.pt/",
-          "email": "geral@ryse.pt"
-      },
-      {
-          "type": "Social",
-          "name": "APARF - Associação Portuguesa Amigos de Raoul Follereau",
-          "description": "Apoia projetos de prevenção, tratamento, reabilitação e reinserção de doentes de lepra, além de iniciativas de assistência a vítimas de exclusão social. Fundada em 1987, celebra o Dia Mundial dos Doentes de Lepra em Portugal, sensibilizando a população e promovendo a recolha de fundos, inspirada na vida de Raoul Follereau.",
-          "website": "https://aparf.pt/",
-          "email": "aparf@aparf.pt",
-          "phone": "218 520 520",
-          "address": "R. Cidade de Nova Lisboa 7, 1800-099 Lisboa",
-          "donations": [
-              "https://aparf.pt/como-fazer-parte-de-um-projecto/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "APAV",
-          "description": "Organização sem fins lucrativos presente em todo o país, que apoia, de forma individualizada, qualificada e humanizada, vítimas de crimes, através da prestação de serviços gratuitos e confidenciais. Trabalha para que em Portugal o estatuto da vítima de crime seja plenamente reconhecido, valorizado e efetivo. A sua missão  é apoiar as vítimas de crime, as suas famílias e amigos, prestando-lhes serviços de qualidade, gratuitos e confidenciais e contribuir para o aperfeiçoamento das políticas públicas, sociais e privadas centradas no estatuto da vítima.",
-          "website": "http://www.apav.pt/",
-          "email": "apav.sede@apav.pt",
-          "phone": "259 375 521",
-          "address": "R. José Estêvão 135 A, 1150-201 Lisboa",
-          "donations": [
-              "http://www.apav.pt/donativos",
-              "IBAN: PT50.0036.0000.99105902803.37",
-              "MBWay: +351 967 116 952"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "APROXIMAR",
-          "description": "Cooperativa de Inovação Social cuja missão é valorizar o capital social e humano das organizações e das pessoas, enquanto estratégia para responder de forma sustentável a desafios e oportunidades suscitados pelo meio envolvente.",
-          "website": "https://www.aproximar.pt/",
-          "email": "contacto@aproximar.pt",
-          "address": "Rua do Paraíso, loja n.º 2 2610-136 Alfragide "
-      },
-      {
-          "type": "Social",
-          "name": "APSA - Associação Portuguesa De Síndrome De Asperger",
-          "description": "Fundada em 2003, é uma IPSS sem fins lucrativos que apoia pessoas com Síndrome de Asperger e suas famílias em Portugal. Promove sessões de sensibilização, seminários e outras iniciativas para desdramatizar a condição. Ccapacita jovens adultos com treino de competências sociais, autonomia e ateliês vocacionais. Além disso, colabora com 24 empresas parceiras no Programa Empregabilidade, facilitando a integração desses jovens no mercado de trabalho.",
-          "website": "https://www.apsa.org.pt/pt/",
-          "email": "geral@apsa.org.pt",
-          "address": "Arruamento à Tv. da Granja, n.1,, 1500-335 Lisboa",
-          "donations": [
-              "https://apsa.org.pt/pt/apoiar"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Associação CrescerSer",
-          "description": "Promove os direitos de crianças e jovens, acolhendo vítimas de maus-tratos e ajudando-as a construir uma vida autónoma. A associação oferece acolhimento dos 0 aos 25 anos, empodera famílias, cria soluções inovadoras e incentiva a autonomia e integração comunitária, contribuindo para o desenvolvimento social.",
-          "website": "https://crescerser.org/",
-          "email": "sede@crescerser.org",
-          "phone": "962 133 050",
-          "address": "Costa do Castelo, nº5 - R/C 1100 - 176 Lisboa",
-          "donations": [
-              "https://crescerser.org/fazer-donativo/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Associação Kosmicare",
-          "description": "Pretende mudar as políticas de drogas e capacitar pessoas que usam drogas, bem como as suas famílias e comunidades, promovendo sua saúde e bem-estar e adotando políticas e práticas baseadas em evidências.",
-          "website": "https://kosmicare.org/",
-          "email": "contact@kosmicare.org",
-          "phone": "+351 911 185 758",
-          "address": "R. Cesário Verde 17B, 1170-283 Lisboa",
-          "donations": [
-              "https://www.kosmicare.org/funder/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Comunidade Vida e Paz",
-          "description": "Tem como missão ir ao encontro das pessoas em situação de sem-abrigo, ajudando-as a recuperar a sua dignidade e a (re)construir o seu projeto de vida, através de uma ação integrada de prevenção, reabilitação e reinserção.",
-          "website": "https://www.cvidaepaz.pt/",
-          "email": "geral@alvalade.cvidaepaz.pt",
-          "phone": "912 340 222",
-          "address": "R. Domingos Bontempo 7, 1700-142 Lisboa",
-          "donations": [
-              "http://www.donativos.cvidaepaz.pt/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Earlybird",
-          "description": "Proporciona experiências educativas inovadoras e impactantes através da organização de diversas atividades, em ambiente não formal e privilegiando uma aprendizagem experiencial. Pretende estimular nos jovens o desenvolvimento de competências pessoais, sociais e profissionais, que alicercem a sua felicidade, sucesso e impacto.",
-          "website": "https://earlybird.pt/",
-          "email": "info@earlybird.pt",
-          "address": "Calçada da Estrela 129, 1200-662 Lisboa",
-          "donations": [
-              "https://earlybird.pt/voluntariado-individual/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Make a Wish",
-          "description": "A sua missão é a realização de desejos a crianças e jovens, dos 3 aos 17 anos, em todo o território nacional, com doenças graves, progressivas, degenerativas ou malignas, proporcionando-lhes um momento de força, alegria e esperança.",
-          "website": "https://makeawish.pt/",
-          "email": "info@makeawish.pt",
-          "phone": "213 562 082",
-          "address": "Av. José Malhoa 27, 1070-034 Lisboa",
-          "donations": [
-              "https://makeawish.pt/como-ajudar/fazer-um-donativo/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Padrinhos do Mundo",
-          "description": "ONGD que, desde 2017, apoia crianças carenciadas, famílias e comunidades em Moçambique, São Tomé e Príncipe e Portugal. Atua com base em três pilares: Programa de Apadrinhamento, SOS Famílias e Campanhas Extraordinárias, com foco em ajudar as populações mais vulneráveis. Estas ações são financiadas por quotas, donativos e parcerias com entidades nacionais e internacionais.",
-          "website": "https://www.padrinhosdomundo.pt/",
-          "email": "geral@padrinhosdomundo.pt",
-          "phone": "+351 933 229 151",
-          "address": "Palácio Baldaya, Estr. de Benfica 701A, 1549-011 Lisboa",
-          "donations": [
-              "https://www.padrinhosdomundo.pt/mude-vidas",
-              "IBAN: PT50.0036.0166.99100093847.14",
-              "MBWay: +351 933 229 151"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Pressley Ridge",
-          "description": "Focada em criar conexões que impulsionam a mudança e promovam a felicidade na vida de cada criança, jovem e família. Partilha o sonho de que um dia, todas as crianças irão prosperar. Esforça-se diariamente para construir um mundo em que esta visão se possa tornar realidade.",
-          "website": "https://www.pressleyridge.pt/pt/",
-          "email": "contacto@pressleyridge.pt",
-          "phone": "+351 962 564 855",
-          "address": " Av. Fernando Lopes Graça 7B, 2650-439 Amadora",
-          "donations": [
-              "https://www.pressleyridge.pt/pt/pages/como-ajudar"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "SOS Voz Amiga",
-          "description": "IPSS, que presta apoio emocional especializado pelo telefone e cuja missão é combater a solidão, o sofrimento emocional e o risco de suicídio, tentando em simultâneo, amenizar o sofrimento de quem liga e ajudar na recuperação da autoestima e vontade de enfrentar as adversidades.",
-          "website": "https://www.sosvozamiga.org/",
-          "email": "direcao@sosvozamiga.org",
-          "phone": "+351 962 564 855",
-          "donations": [
-              "https://www.sosvozamiga.org/pt/contribua-para-as-causas-da-saude-mental-e-prevencao-do-suicidio-apoiando-a-nossa-linha/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "SPEM - Sociedade Portuguesa de Esclerose Múltipla",
-          "description": "IPSS, ONGPD e ADUS que luta todos os dias pela melhoria da qualidade de vida das pessoas com Esclerose Múltipla (EM) e outras doenças neurológicas, seus familiares e/ou cuidadores. De forma a cumprir a sua missão, adota uma abordagem estratégica que abrange diversas áreas de atuação, incluindo o apoio social, psicológico, jurídico e de reabilitação aos doentes, a sensibilização da sociedade, o incentivo à investigação e a defesa dos direitos das pessoas com EM.",
-          "website": "https://spem.pt/",
-          "email": "spem@spem.pt",
-          "address": " R. Zófimo Pedroso 66, 1950-291 Lisboa",
-          "donations": [
-              "https://spem.pt/faca-uma-doacao/#faca-uma-doacao"
-          ]
-      }
-      ]
+      "id": 12
     },
     {
       "geometry": {
@@ -12545,49 +12195,7 @@
         "id": "PT14",
         "name": "Santarém"
       },
-      "id": 13,
-      "institutions" :[
-        {
-          "type": "Animal",
-          "name": "APAAC – Associação de Protecção aos Animais Abandonados do Cartaxo",
-          "description": "Protege a vida animal e desempenha funções higio-sanitárias no Concelho do Cartaxo, gerindo o CROACC, um centro equipado para acolher e tratar animais. O concelho é livre de canídeos errantes, e a APAAC atua na sinalização, recolha e vigilância dos animais. Desde 2010, promove a esterilização de felídeos de rua e facilita adoções responsáveis, assegurando vacinação, identificação e esterilização gratuita para os adotantes.",
-          "website": "https://www.facebook.com/profile.php?id=100064534848460&locale=pt_PT",
-          "email": "apaac@sapo.pt",
-          "phone": "243 704 740",
-          "address": " Lote 13 Zona Industrial de, 2070-681 Vila Chã de Ourique"
-      },
-      {
-          "type": "Animal",
-          "name": "Associação Protectora dos Animais de Torres Novas",
-          "description": "Promove o bem-estar, a reintegração e a adoção responsável de animais abandonados, em situações de risco ou vítimas de maus-tratos.",
-          "website": "https://linktr.ee/apa.torresnovas",
-          "email": "apda.tn@gmail.com",
-          "address": " Estr. do Caramulo 2350, Parceiros de Igreja"
-          
-      },
-      {
-          "type": "Animal",
-          "name": "Patinhas de Rua – Associação Riomaiorense de Protecção à Fauna e Flora",
-          "description": "Fundada em 2015, tem a finalidade de resgatar animais errantes ou em perigo de vida. É uma associação sem fins lucrativos que tem crescido aos poucos com o trabalho dos voluntários.  Os animais são resgatados da rua ou através de pedidos de ajuda e/ ou queixas. São tratados, esterilizados ou castrados, vacinados e é colocado o microchip. Além dos procedimentos essenciais, recebem todos os cuidados para poderem perder os traumas que trazem. ",
-          "website": "https://patinhasderua-riomaior.webnode.pt/",
-          "email": "patinhasderuariomaior@gmail.com",
-          "donations": [
-              "https://patinhasderua-riomaior.webnode.pt/contacto/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "INCLUIR - Associação de Apoio ao Cidadão com Necessidades Especiais Maria do Carmo Silva Melancia",
-          "description": "Associação dedicada à promoção de uma sociedade inclusiva, comprometida em garantir a plena integração das pessoas com necessidades especiais de forma eficaz e justa. Entre as iniciativas, destaca-se o apoio psicológico, o desporto inclusivo, o banco de ajudas técnicas, a comercialização de produtos de apoio, consultas médicas e formação em cuidados básicos. Além disso, promove reuniões de terapia de grupo e defende alterações legislativas para fortalecer a inclusão.",
-          "website": "https://aadpcmcsm.wixsite.com/incluir/associacao",
-          "email": "incluir@incluir.onmicrosoft.com",
-          "phone": "+351 964 115 634",
-          "address": "Avenida 25 de Abril, Nº 50A, R/C 2005-159 Santarém",
-          "donations": [
-              "https://aadpcmcsm.wixsite.com/incluir/como-apoiar"
-          ]
-      }
-      ]
+      "id": 13
     },
     {
       "geometry": {
@@ -13483,46 +13091,7 @@
         "id": "PT10",
         "name": "Leiria"
       },
-      "id": 14,
-      "institutions" :[
-        {
-          "type": "Animal",
-          "name": "AMIGO FIEL - Associação Protectora de Animais do Bombarral",
-          "description": "Recolhe animais errantes e intervém em casos de maus-tratos e negligência. Após o acolhimento, os animais passam por quarentena, são vacinados, castrados e socializados para adoção. Promove adoções nas redes sociais e eventos, como o Dia do Amigo Fiel, com desfiles na Praça do Município.",
-          "website": " https://www.amigofielbombarral.com/sobre-amigo-fiel-2/",
-          "email": "oamigofiel.bombarral@gmail.com",
-          "phone": "+351 910 722 456",
-          "address": "R. Do Falcão, 2540-753 Bombarral",
-          "donations": [
-              "https://www.amigofielbombarral.com/donate/"
-          ]
-      },
-      {
-          "type": "Animal",
-          "name": "AZL - Associação de defesa e protecção dos animais da zona de Leiria",
-          "description": "Tem por missão apoiar a defesa e proteção de todos os animais, em particular, os que se encontrem em situação de sofrimento e risco de vida, usando todos os recursos necessários e possíveis para o interesse e bem-estar animal. Além disso, foca-se na sensibilização contra o abandono de animais.",
-          "website": "https://azlfa.com/",
-          "email": "azleiria.geral@gmail.com",
-          "phone": "+351 964 669 126",
-          "address": "Rua do Casal CCI-100",
-          "donations": [
-              "https://azlfa.com/doacoes/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "ADAV - Leiria - Associação de Defesa e Apoio da Vida",
-          "description": "Associação que luta para conferir dignidade a mulheres grávidas e ou com bebés até aos 3 anos de idade, ajudando-as económica e socialmente e capacitando-as para a maternidade responsável e integração no mundo do trabalho.",
-          "website": "https://www.facebook.com/adavleiria/",
-          "email": "adav.leiria@gmail.com",
-          "phone": "+351 965 112 219",
-          "address": " Ponte Hintze Ribeiro, Leiria",
-          "donations": [
-              "MBWAY: 965 112 219 / 966 652 746",
-              "IBAN: PT50 0033 0000 4533 6761 3250 5 "
-          ]
-      }
-      ]
+      "id": 14
     },
     {
       "geometry": {
@@ -14538,58 +14107,7 @@
         "id": "PT06",
         "name": "Coimbra"
       },
-      "id": 15,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "ACREDITAR - Associação de Pais e Amigos de Crianças com Cancro",
-          "description": "Fundada em 1994, é uma associação de pais de crianças e jovens com cancro, que oferece apoio nos momentos de diagnóstico, tratamento e pós-tratamento. Com representatividade nacional, atua em Lisboa, Coimbra, Porto e Madeira, em parceria com hospitais de referência em oncologia pediátrica. A sua rede de apoio combina empatia, profissionalismo e a experiência de quem já enfrentou os desafios do cancro pediátrico, proporcionando segurança num momento de incerteza.",
-          "website": "https://acreditar.org.pt/",
-          "email": "acreditar_nrc@acreditar.pt",
-          "phone": "239 482 027",
-          "donations": [
-              "https://acreditar.org.pt/colaborar/donativo-financeiro/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "ADAV - Associação de Defesa e Apoio da Vida",
-          "description": "Fundada em 1999, apoia mulheres grávidas e mães em situação de vulnerabilidade social e económica, bem como as suas famílias. A associação aborda questões como desemprego, habitação, gestão financeira, imigração e competências parentais. Conta com gabinetes de Serviço Social, Psicologia, Apoio Jurídico e Voluntariado, além do Banco da Maternidade e da Criança. Em articulação com a Rede Social de Coimbra, oferece apoio externo com produtos de higiene, alimentos e artigos de puericultura, respondendo a mais de 150 pedidos anuais.",
-          "website": "https://www.adavcoimbra.pt/paginas/associacao/",
-          "email": "adavcoimbra@gmail.com",
-          "phone": "+351 913 109 066",
-          "address": "R. Lourenço de Almeida Azevedo 27, 3000-250 Coimbra",
-          "donations": [
-              "https://www.adavcoimbra.pt/paginas/ajudar/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "APAV",
-          "description": "Organização sem fins lucrativos presente em todo o país, que apoia, de forma individualizada, qualificada e humanizada, vítimas de crimes, através da prestação de serviços gratuitos e confidenciais. Trabalha para que em Portugal o estatuto da vítima de crime seja plenamente reconhecido, valorizado e efetivo. A sua missão  é apoiar as vítimas de crime, as suas famílias e amigos, prestando-lhes serviços de qualidade, gratuitos e confidenciais e contribuir para o aperfeiçoamento das políticas públicas, sociais e privadas centradas no estatuto da vítima.",
-          "website": "https://apav.pt/apav_v3/index.php/pt/",
-          "email": "apav.coimbra@apav.pt",
-          "phone": "239 781 545",
-          "address": " Av. Fernão de Magalhães 153 1º andar sala 1, 3000-176 Coimbra",
-          "donations": [
-              "http://www.apav.pt/donativos",
-              "IBAN: PT50.0036.0000.99105902803.37",
-              "MBWay: +351 967 116 952"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Cáritas Diocesana de Coimbra",
-          "description": "Oferece serviços como apoio social, alojamento para pessoas em situação de sem-abrigo, atendimento a vítimas de violência doméstica, casa abrigo para homens, apoio psicológico a crianças e jovens, programas de empregabilidade e acolhimento residencial para crianças. ",
-          "website": "https://caritascoimbra.pt/",
-          "email": "caritas@caritascoimbra.pt",
-          "phone": "+351 966 825 595",
-          "address": " R. Dom Francisco de Almeida 14, 3030-382 Coimbra",
-          "donations": [
-              "https://caritascoimbra.pt/colabore/campanhas-de-donativos/"
-          ]
-      }
-      ]
+      "id": 15
     },
     {
       "geometry": {
@@ -15425,31 +14943,7 @@
         "id": "PT01",
         "name": "Aveiro"
       },
-      "id": 16,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "Cáritas Diocesana de Aveiro",
-          "description": "Criada em 1976, é uma IPSS com atuação em 30 paróquias da Diocese de Aveiro. Oferece serviços como apoio social, alojamento para pessoas em situação de sem-abrigo, atendimento a vítimas de violência doméstica, casa abrigo para homens, apoio psicológico a crianças e jovens, programas de empregabilidade e acolhimento residencial para crianças. ",
-          "website": "https://www.caritasaveiro.pt/",
-          "email": "aveiro@caritas.pt",
-          "address": "Rua do Carmo, n.º 42 - UF Glória e Vera Cruz",
-          "donations": [
-              "https://www.caritasaveiro.pt/colabore/campanhas-de-donativos/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Centro Social Paroquial da Vera Cruz",
-          "description": "Assume como Missão Ser Casa que acolhe, protege e cuida, promovendo a capacitação e bem estar da sociedade. Oferece serviços desde apoio à parentalidade, a vítimas de violência doméstica e fornecimento alimentar, assim como serviços de creche, pré-escolar e limpeza.",
-          "website": "https://casaveracruz.pt/sobre/",
-          "email": "cspveracruz@cspveracruz.pt",
-          "address": "Rua Prior Manuel António Fernandes, nº21, Sá-Barrocas",
-          "donations": [
-              "https://casaveracruz.pt/amigo/mecenato/"
-          ]
-      }
-      ]
+      "id": 16
     },
     {
       "geometry": {
@@ -16017,90 +15511,7 @@
         "id": "PT13",
         "name": "Porto"
       },
-      "id": 17,
-      "institutions" :[
-        {
-          "type": "Animal",
-          "name": "ASSOCIAÇÃO ANIMAIS DE RUA",
-          "description": "Associação criada em 2008 com o objetivo de promover o bem-estar dos animais errantes e pertencentes a famílias carenciadas através da sua esterilização, acompanhamento e tratamento médico quando se encontram doentes, alimentação e promoção da adoção responsável de animais dóceis. Tem várias áreas de atuação no país onde, em parceria com os municípios e cuidadores de colónias de gatos silvestres, implementa e gere um programa de controlo populacional através da esterilização em massa dos animais. Até à data, a Animais de Rua ajudou mais de 57.000 animais. Trabalhamos diariamente para aumentar este número.",
-          "website": "https://animaisderua.org/",
-          "email": "sofia.rois@animaisderua.org",
-          "phone": "760 300 161",
-          "address": "RUA JOÃO DAS REGRAS N.284 Sala 105 1ºandar",
-          "donations": [
-              "https://animaisderua.org/donation"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "ACREDITAR - Associação de Pais e Amigos de Crianças com Cancro",
-          "description": "Fundada em 1994, é uma associação de pais de crianças e jovens com cancro, que oferece apoio nos momentos de diagnóstico, tratamento e pós-tratamento. Com representatividade nacional, atua em Lisboa, Coimbra, Porto e Madeira, em parceria com hospitais de referência em oncologia pediátrica. A sua rede de apoio combina empatia, profissionalismo e a experiência de quem já enfrentou os desafios do cancro pediátrico, proporcionando segurança num momento de incerteza.",
-          "website": "https://acreditar.org.pt/",
-          "email": "acreditar_nrn@acreditar.pt",
-          "phone": "225 480 405",
-          "address": "Rua Académico Futebol Clube n.º 364",
-          "donations": [
-              "https://acreditar.org.pt/colaborar/donativo-financeiro/"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "ADDIM - Associação Democrática de Defesa dos Direitos e Igualdade das Mulheres",
-          "description": "Disponibiliza gratuitamente a todas as pessoas vítimas de violência doméstica/género apoio psicológico, social e aconselhamento jurídico, contando com uma equipa de técnicas/os especializadas/os que prestam apoio presencial e à distância. O encaminhamento e sinalização de situações de violência doméstica pode ser feito através dos contactos disponibilizados.",
-          "website": "http://www.addim.pt/",
-          "email": "direcao@addim.pt",
-          "phone": "225 104 511",
-          "address": "Rua Professor Bento de Jesus Caraça, n.º 248"
-      }, 
-      {
-          "type": "Social",
-          "name": "APOFEN - Associação Portuguesa de Fenilcetonúria e Outras Doenças Metabolicas",
-          "description": "IPSS de âmbito nacional, que presta apoio nas diversas vertentes aos portadores de Doenças Hereditárias do Metabolismo das Proteínas (DHMP) e suas famílias, tendo como objectivo a garantia de uma qualidade de vida cada vez melhor. Para além disso, assegura uma dieta eficaz, económica e acessível aos portadores de DHMP, estimulando ainda o convívio entre os doentes e famílias possibilitando, assim, a importante troca de experiências.",
-          "website": "https://www.apofen.pt/pt/index.php",
-          "email": "geral@apofen.pt",
-          "phone": "+351 917 077 569",
-          "address": "Praça Pedro Nunes Nº 88, 4099-028 Porto",
-          "donations": [
-              "https://www.apofen.pt/pt/socio.php"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Associação Coração Amarelo- Delegação Porto",
-          "description": "Fundada em 2000, é uma IPSS baseada em trabalho voluntário. Foca-se no apoio a pessoas em solidão, especialmente idosos, com visitas domiciliares, hospitalares e em lares. Oferece acompanhamento a consultas e exames, promove atividades culturais e recreativas, como ateliers e piqueniques, e realiza projetos de formação para voluntários e a comunidade, incentivando o relacionamento intergeracional e a melhoria da qualidade de vida dos idosos.",
-          "website": "http://coracaoamarelo.pt/delegacao-do-porto",
-          "email": "coracaoamareloporto@gmail.com",
-          "phone": "+351 934 505 606",
-          "address": "Rua Costa Cabral nº 1211",
-          "donations": [
-              "https://coracaoamarelo.pt/envolva-se/",
-              "MBWay: 934 505 606",
-              "IBAN: PT50 0036 0046 9910 0230 1045 5"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Associação GESTOSOLIDÁRIO",
-          "description": "Nasceu em 2020, durante a pandemia, a partir do Grupo de Ajuda Alimentar a Famílias, que hoje reúne 7200 membros. Foca-se em apoiar famílias em dificuldades, prioriza a privacidade e uma distribuição justa de donativos, atendendo especialmente crianças e idosos. Com a ajuda de doações, já auxiliou cerca de 1500 famílias em 4 anos, oferecendo alimentos, roupas, brinquedos, medicação, mobiliário e até apoio na busca de emprego.",
-          "website": "https://www.associacao1gestosolidario.pt/",
-          "email": "geral.umgesol@gmail.com",
-          "phone": "+351 916 803 544",
-          "address": "Rua Dr Severiano 401 -1 Fânzeres Gondomar",
-          "donations": [
-              "https://www.associacao1gestosolidario.pt/apoie-nos"
-          ]
-      },
-      {
-          "type": "Social",
-          "name": "Associação Projeto Criar",
-          "description": "Presta serviços de natureza jurídica, clínica e social a mulheres, crianças, jovens e famílias, sempre na qualidade de ofendidos(as), em processos Tutelar Cíveis, tutelares educativos, em processos de promoção e protecção e nos processos-crime, nomeadamente quando são vítimas de abusos sexuais, maus tratos, violência doméstica e tráfico de seres humanos. ",
-          "website": "https://projectocriar.blogspot.com/",
-          "email": "projectocriar@gmail.com",
-          "phone": "+351 964 899 958",
-          "address": "Praça D. Filipa de Lencastre 22 1º Esq, sala 26, 4050-259 Porto"
-          
-      }
-      ]
+      "id": 17
     },
     {
       "geometry": {
@@ -16518,8 +15929,7 @@
         "id": "PT30",
         "name": "Madeira"
       },
-      "id": 18,
-      "institutions" :[]
+      "id": 18
     },
     {
       "geometry": {
@@ -17581,30 +16991,7 @@
         "id": "PT20",
         "name": "Açores"
       },
-      "id": 19,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "ASSOCIAÇÃO DE DADORES DE SANGUE DA ILHA TERCEIRA",
-          "description": "Associação com o único objetivo a proteção de vidas humanas, por meio da doação desinteressada de sangue com fins terapêuticos a feridos e doentes, seja qual for a sua nacionalidade, raça, credo político ou religioso, condição social ou económica.",
-          "website": "https://www.facebook.com/p/Associa%C3%A7%C3%A3o-de-Dadores-de-Sangue-da-Ilha-Terceira-100064479108719/?locale=pt_PT",
-          "email": "adsaha@gmail.com",
-          "adress": "Angra do Heroísmo, Portugal, 9700-121"
-        },
-        {
-          "type": "Social",
-          "name": "AMIZADE 2000 - ASSOCIAÇÃO DE APOIO AOS DEFICIENTES E INADAPTADOS DO NORDESTE",
-          "description": "Promove a autonomia pessoal e social das pessoas com deficiência residentes no concelho do Nordeste, através de um serviço individualizado e abrangente.",
-          "website": "https://amizade2000.pt/",
-          "email": "info.amizade2000@gmail.com",
-          "adress": "Rua dos Barreiros, n.º 20, 9630-105 Lomba da Fazenda, Nordeste",
-          "phone": "296 486 220",
-          "donations": [
-            "https://amizade2000.pt/apresentacao/"
-          ]
-        }
-            
-      ]
+      "id": 19
     },
     {
       "geometry": {
@@ -18384,31 +17771,7 @@
         "id": "PT18",
         "name": "Viseu"
       },
-      "id": 20,
-      "institutions" :[
-        {
-          "type": "Social",
-          "name": "Portugal AVC - União de Sobreviventes, Familiares e Amigos",
-          "description": "Associação de âmbito nacional, protagonizada pelos próprios sobreviventes de AVC, e englobando também familiares, cuidadores e profissionais de saúde. Tem por objetivo contribuir para a resposta às necessidades sentidas pelos sobreviventes de AVC e seus familiares, bem como a promoção de iniciativas que visem, por um lado, contribuir para a prevenção do AVC e suas consequências. Tendo presente que o AVC é a primeira causa de mortalidade e, sobretudo, de incapacidade permanente em Portugal.",
-          "website": "http://www.portugalavc.pt/",
-          "email": "info@portugalavc.pt",
-          "phone": "+351 928 060 600",
-          "donations": [
-            "https://www.portugalavc.pt/contribuir"
-          ]
-        },
-        {
-          "type": "Social",
-          "name": "Cáritas Diocesana de Viseu",
-          "description": "Instituição oficial da Igreja Católica, destinada à promoção e exercício da ação social na Diocese. Pretende minimizar os problemas, desigualdades e injustiças sociais das pessoas mais vulneráveis, em situação de pobreza e exclusão social.",
-          "website": "https://www.caritasviseu.pt/",
-          "email": "geral@caritasviseu.pt",
-          "phone": "232 420 340",
-          "donations": [
-            "https://www.caritasviseu.pt/colabore/campanhas-de-donativos/"
-          ]
-        }
-      ]
+      "id": 20
     },
     {
       "geometry": {

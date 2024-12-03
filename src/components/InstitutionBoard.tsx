@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
+import allInstitutions from '../assets/allInstitutions.json';
 
 type InstitutionBoardProps = {
-  institutions: any[]; // Array of institutions passed as props
+  regionID: number | null; // Array of institutions passed as props
   filter: string | null; // Filter selected by the user
 };
 
-const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ institutions, filter}) => {
+const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter}) => {
   const [selectedInstitution, setSelectedInstitution] = useState<any | null>(null);
 
-  const filteredInstitutions = filter && filter !== '---' 
-  ? institutions.filter((institution) => institution.type === filter) 
-  : institutions;
-
   if (selectedInstitution) {
-    // Render a detailed panel for the selected institution
     return (
+      (selectedInstitution.name) &&
       <div className="relative p-6 border m-4 border-gray-300 rounded-md shadow-md">
         <button
           onClick={() => setSelectedInstitution(null)}
@@ -24,7 +21,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ institutions, filte
         </button>
         <div className='flex flex-col items-center justify-center text-center'>
             <img
-              src={`${process.env.PUBLIC_URL}/${selectedInstitution.name}.jpg`}
+              src={`${process.env.PUBLIC_URL}/logos/${selectedInstitution.name}.jpg`}
               alt="Institution"
               className="w-32 rounded-md mb-4"
             />
@@ -86,19 +83,27 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ institutions, filte
     );
   }
 
+  const institutions = regionID === 0 
+  ? allInstitutions 
+  : allInstitutions.filter((institution) => institution.id === regionID);
+
+  const filteredInstitutions = filter && filter !== '---'
+    ? institutions.filter((institution) => institution.type === filter)
+    : institutions;
+
   return (
     <div className="overflow-y-auto max-h-96 p-4 border m-6 border-gray-300 rounded-md shadow-md">
-      <div className="grid grid-rows-3 grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {filteredInstitutions.map((institution) => (
+          (institution.name) &&
           <div
-            key={institution.id}
             onClick={() => setSelectedInstitution(institution)}
-            className="cursor-pointer"
+            className="w-40 flex items-center justify-center cursor-pointer hover:scale-105 hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:rounded-lg transition-transform"
           >
             <img
-              src={`${process.env.PUBLIC_URL}/${institution.name}.jpg`}
+              src={`${process.env.PUBLIC_URL}/logos/${institution.name}.jpg`}
               alt="Institution"
-              className="p-4 hover:scale-105 transition-transform"
+              className="p-4 transition-transform"
             />
           </div>
         ))}
