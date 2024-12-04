@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
       <div className="container mx-auto flex items-center justify-between relative">
-        <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="h-8" />
+        <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="h-16 pr-20" />
         {isMobile ? (
           <>
             <button className="block md:hidden absolute right-8" onClick={toggleMenu}>

@@ -10,7 +10,7 @@ const Commitment: React.FC = () => {
   const isInView = useInView(blockquoteRef, { once: true });
 
   return (
-    <section className="pt-16 pb-32 px-8 md:px-16 flex flex-col justify-center items-center">
+    <section className="pt-12 pb-32 px-8 md:px-16 flex flex-col justify-center items-center">
       <motion.div
         ref={blockquoteRef}
         initial={{ opacity: 0, y: 20 }}
@@ -18,9 +18,9 @@ const Commitment: React.FC = () => {
         transition={{ duration: 1.6, ease: "easeOut" }}
         className="w-full"
       >
-        <blockquote className="italic text-base md:text-3xl text-center mb-8 pb-8">
+        <blockquote className="italic text-base md:text-3xl text-end mb-12 pb-8 px-4">
           "Numa geração que sonha com um futuro melhor, na JUNITEC transformamos ideias em ações que impactam o presente."
-          <span className="block mt-4 text-sm md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
+          <span className="block mt-4 text-xs md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
         </blockquote>
       </motion.div>
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center relative">
