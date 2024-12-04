@@ -26,8 +26,8 @@ const Header: React.FC = () => {
             <nav className={`absolute top-full left-0 right-0 bg-[#0944A1] ${isOpen ? 'flex' : 'hidden'} flex-col items-center`}>
               <ul className="flex flex-col items-center gap-4 text-xl font-semibold">
                 <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
-                <li><a href="https://junitec.pt/home/" className="hover-effect">Conhece-nos</a></li>
-                <li><a href="#contacts" className="hover-effect">Contactos</a></li>
+                <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
+                <li><a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a></li>
               </ul>
             </nav>
           </>
@@ -35,8 +35,8 @@ const Header: React.FC = () => {
           <nav className="flex-1 md:flex md:items-center md:justify-center">
             <ul className="flex flex-col md:flex-row gap-4 md:gap-48 text-xl font-semibold">
               <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
-              <li><a href="https://junitec.pt/home/" className="hover-effect">Conhece-nos</a></li>
-              <li><a href="#contacts" className="hover-effect">Contactos</a></li>
+              <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
+              <li><a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a></li>
             </ul>
           </nav>
         )}
