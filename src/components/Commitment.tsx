@@ -39,6 +39,9 @@ const Commitment: React.FC = () => {
           <p className="text-sm md:text-lg text-justify pr-20 pt-10">
             Neste ano, reforçámos esse compromisso. Elaborámos o nosso primeiro <span className="font-bold">relatório ESG</span>, consolidando práticas que integram os pilares Ambiental, Social e Governança, em parceria com entidades de renome, como a <span className="font-bold">Veolia</span> e a <span className="font-bold">A.T Kearney.</span> Esta abordagem traduz a nossa dedicação em atuar de forma consciente, deixando uma marca positiva no presente e inspirando as gerações futuras.
           </p>
+          <button className="mt-8 bg-white text-[#175FAAED] font-bold py-2 px-4 rounded hover:bg-gray-200">
+            Ver Relatório
+          </button>
         </SlideRightAnimation>
         
         <MoveUpAnimation direction="up" className="relative md:absolute md:top-[calc(50%-50px)] md:left-[calc(50%-50px)] md:w-3/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-10 md:-translate-x-16 z-20 mt-8 md:mt-0">
