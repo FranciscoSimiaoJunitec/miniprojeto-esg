@@ -4,7 +4,7 @@ import SlideRightAnimation from './animations/SlideRight';
 import MoveUpAnimation from './animations/SlideUp';
 
 const Commitment: React.FC = () => {
-  const videoId = 'dQw4w9WgXcQ';
+  const videoId = 'MNK5B6OUXkE';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
   const blockquoteRef = useRef(null);
   const isInView = useInView(blockquoteRef, { once: true });
