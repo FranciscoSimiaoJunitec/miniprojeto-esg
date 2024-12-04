@@ -33,10 +33,10 @@ const Commitment: React.FC = () => {
           className="relative z-10 md:w-4/5 max-w-xl bg-[#175FAAED] text-white p-8 shadow-lg flex flex-col justify-start transform md:translate-y-10 ml-4"
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-start">O NOSSO COMPROMISSO</h2>
-          <p className="text-sm md:text-lg text-justify pr-20">
+          <p className="text-sm md:text-lg text-justify px-4 md:pr-20">
             Acreditamos que, mais do que júnior empresários, somos agentes de transformação, responsáveis por contribuir para um futuro melhor. Por isso, criámos um plano de ação que reflete o nosso compromisso com a <span className="font-bold">responsabilidade social</span>, onde, além de <span className="font-bold">doações</span> monetárias e em espécie, promovemos um programa interno de <span className="font-bold">voluntariado</span>, incentivando os nossos membros a envolver-se em iniciativas que impactam positivamente a sociedade.
           </p>
-          <p className="text-sm md:text-lg text-justify pr-20 pt-10">
+          <p className="text-sm md:text-lg text-justify pt-10 px-4 md:pr-20">
             Neste ano, reforçámos esse compromisso. Elaborámos o nosso primeiro <span className="font-bold">relatório ESG</span>, consolidando práticas que integram os pilares Ambiental, Social e Governança, em parceria com entidades de renome, como a <span className="font-bold">Veolia</span> e a <span className="font-bold">A.T Kearney.</span> Esta abordagem traduz a nossa dedicação em atuar de forma consciente, deixando uma marca positiva no presente e inspirando as gerações futuras.
           </p>
           <button className="mt-8 bg-white text-[#175FAAED] font-bold py-2 px-4 rounded hover:bg-gray-200">
@@ -52,6 +52,7 @@ const Commitment: React.FC = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            
           ></iframe>
         </MoveUpAnimation>
       </div>
