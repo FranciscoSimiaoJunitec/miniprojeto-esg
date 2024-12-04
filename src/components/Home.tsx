@@ -4,7 +4,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col py-36 px-16 relative">
       {/* Layer 1: Background Image */}
-      <div className="absolute inset-0 z-0 transform -translate-y-20">
+      <div className="absolute inset-0 z-0 transform -translate-y-10">
         <img
           src={`${process.env.PUBLIC_URL}/background.jpg`} 
           alt="Background"
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Layer 2: Blue Gradient Overlay */}
-      <div className="absolute inset-0 z-0 transform -translate-y-20">
+      <div className="absolute inset-0 z-0 transform -translate-y-10">
         <img
           src={`${process.env.PUBLIC_URL}/blur.svg`} 
           alt="Blur"

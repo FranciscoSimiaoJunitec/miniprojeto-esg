@@ -62,8 +62,6 @@ const Gallery: React.FC = () => {
       <Carousel 
         responsive={responsive} 
         infinite 
-        autoPlay 
-        autoPlaySpeed={3000} 
         keyBoardControl 
         showDots
       >
