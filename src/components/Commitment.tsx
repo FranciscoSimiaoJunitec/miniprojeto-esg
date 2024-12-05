@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import SlideRightAnimation from './animations/SlideRight';
-import MoveUpAnimation from './animations/SlideUp';
 
 const Commitment: React.FC = () => {
   const videoId = 'MNK5B6OUXkE';
@@ -44,7 +43,7 @@ const Commitment: React.FC = () => {
           </button>
         </SlideRightAnimation>
         
-        <MoveUpAnimation direction="up" className="relative md:absolute md:top-[calc(50%-50px)] md:left-[calc(50%-50px)] md:w-3/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-10 md:-translate-x-16 z-20 mt-8 md:mt-0">
+        <div className="relative md:absolute md:top-[calc(50%-50px)] md:left-[calc(50%-50px)] md:w-3/5 w-4/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-[-200px] md:-translate-x-[20px] z-20 mt-8 md:mt-0">
           <iframe
             width="100%"
             height="100%"
@@ -52,9 +51,8 @@ const Commitment: React.FC = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            
           ></iframe>
-        </MoveUpAnimation>
+        </div>
       </div>
     </section>
   );
