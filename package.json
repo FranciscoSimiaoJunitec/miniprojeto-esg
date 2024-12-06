@@ -2,7 +2,7 @@
   "name": "react-shit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://franciscosimiaojunitec.github.io/miniprojeto-esg",
+  "homepage": "https://esg-junitec.pt",
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
     "@testing-library/jest-dom": "^5.17.0",
