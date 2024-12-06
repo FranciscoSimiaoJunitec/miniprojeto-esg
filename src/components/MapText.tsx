@@ -86,7 +86,7 @@ const MapText: React.FC = () => {
         >
           <SlideInAnimation
             direction="right"
-            className="absolute z-30 top-[55%] left-[-25%] md:left-[-22%]  transform translate-x-[-45%] translate-y-[-45%] scale-[1.1] md:scale-[0.95] w-[80%] md:w-[70%] outline-dashed "
+            className="absolute z-30 top-[55%] left-[-25%] md:left-[-22%]  transform translate-x-[-45%] translate-y-[-45%] scale-[1.1] md:scale-[0.95] w-[80%] md:w-[70%]"
           >
             <MadeiraMap
               tooltipId="madeira-tooltip"
