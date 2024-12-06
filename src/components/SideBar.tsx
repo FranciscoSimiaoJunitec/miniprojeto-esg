@@ -46,7 +46,7 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
   return (
     <SlideInAnimation
       direction="left"
-      className="absolute top-0 left-0 h-full w-full md:w-1/2 bg-white text-black p-6 z-40"
+      className="absolute top-0 left-0 h-full w-full md:w-1/2 bg-white text-black p-6 z-50"
     >
       <div className="relative h-full">
         <button
