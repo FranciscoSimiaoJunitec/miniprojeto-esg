@@ -23,7 +23,7 @@ const Commitment: React.FC = () => {
         </blockquote>
       </motion.div>
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center relative">
-        <SlideRightAnimation direction="right" endY={-30} endX={50} className="absolute inset-0 bg-[#F3EEE9] z-0 w-[50%] h-[90%] top-[20%] left-[20%]">
+        <SlideRightAnimation direction="right" endY={-30} endX={50} className="absolute inset-0 md:bg-[#F3EEE9] z-0 w-[50%] h-[90%] top-[20%] left-[20%]">
           <div></div>
         </SlideRightAnimation>
         
