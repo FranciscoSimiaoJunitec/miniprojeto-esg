@@ -17,14 +17,37 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
   const [tooltipContent, setTooltipContent] = useState('');
 
   return (
-    <div style={{ height: '100%', width: '100%', position: 'relative' }}>
-      <div style={{ padding: '20px' }}>
+    <>
+      <style>
+        {`
+          @media (max-width: 600px) {
+            .map-container {
+              height: 300px; /* Adjust the height for mobile devices */
+            }
+          }
+
+          @media (min-width: 601px) {
+            .map-container {
+              height: 600px; /* Adjust the height for larger screens */
+            }
+          }
+
+          .custom-tooltip {
+            background-color: rgba(214, 214, 214, 0.8); /* Semi-transparent color */
+            border-radius: 8px; /* Rounded corners */
+            padding: 10px;
+            color: #FFFFFF; /* White text color */
+          }
+        `}
+      </style>
+      <div className="map-container" style={{ height: '100%', width: '100%', position: 'relative' }}>
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
             center: [-35, 37],
             scale: 2000,
           }}
+          viewBox="0 0 800 600" // Adjust the viewBox to make it responsive
           style={{ width: '100%', height: '100%' }}
         >
           <Geographies geography={geoData}>
@@ -49,30 +72,27 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
                     }}
                     onClick={() => {
                       if (isPortugal) {
-                        setSelectedRegion(geo.id); // Pass full region object
+                        setSelectedRegion(geo.id);
                       }
                     }}
                     style={{
                       default: {
-                        fill: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
-                        cursor: isPortugal ? 'pointer' : 'default',
-                        stroke: isPortugal ? (isSelected ? '#ff6961' : '#73cfee') : '#033681',
-                        strokeWidth: 4,
+                        fill: isPortugal ? (isSelected ? '#D2F4FF' : '#74D1EF') : '#D6D6DA',
                         outline: 'none',
+                        stroke: isPortugal ? '#00277d' : '#D6D6DA', // Border color
+                        strokeWidth: 0.5, // Border width
                       },
                       hover: {
-                        fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                        cursor: isPortugal ? 'pointer' : 'default',
-                        stroke: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                        strokeWidth: 4,
+                        fill: isPortugal ? '#D2F4FF' : '#D6D6DA',
                         outline: 'none',
+                        stroke: isPortugal ? '#00277d' : '#D6D6DA', // Border color
+                        strokeWidth: 0.5, // Border width
                       },
                       pressed: {
-                        fill: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                        cursor: isPortugal ? 'pointer' : 'default',
-                        stroke: isPortugal ? (isSelected ? '#ff6961' : '#3399ff') : '#033681',
-                        strokeWidth: 4,
+                        fill: isPortugal ? '#D2F4FF' : '#D6D6DA',
                         outline: 'none',
+                        stroke: isPortugal ? '#00277d' : '#D6D6DA', // Border color
+                        strokeWidth: 0.5, // Border width
                       },
                     }}
                   />
@@ -81,9 +101,9 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
             }
           </Geographies>
         </ComposableMap>
+        <ReactTooltip id={tooltipId} className="custom-tooltip" />
       </div>
-      <ReactTooltip id={tooltipId} place="top" className="font-bold" />
-    </div>
+    </>
   );
 };
 

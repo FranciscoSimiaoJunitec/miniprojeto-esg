@@ -12,3 +12,23 @@
   color: #0844A1; 
   background-color: white;
 }
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0944A1;
+  overflow: hidden;
+  max-height: 0;
+  width: 100%; /* Ensure the menu takes the full width of the header */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  max-height: 200px; /* Adjust this value based on the content height */
+}
+
+.mobile-menu ul {
+  padding: 10px 0;
+}

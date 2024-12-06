@@ -6,8 +6,24 @@ type InstitutionBoardProps = {
   filter: string | null; // Filter selected by the user
 };
 
-const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter}) => {
+const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter }) => {
   const [selectedInstitution, setSelectedInstitution] = useState<any | null>(null);
+
+  const region = allInstitutions.find((region) => region.id === regionID);
+
+  const getNoAssociationsMessage = () => {
+    if (filter === 'Cultural') {
+      return `Sê o primeiro a ajudar-nos a apoiar associações culturais em ${region?.region || 'esta região'}!`;
+    } else if (filter === 'Ambiental') {
+      return `Sê o primeiro a ajudar-nos a apoiar associações ambientais em ${region?.region || 'esta região'}!`;
+    } else if (filter === 'Animal') {
+      return `Sê o primeiro a ajudar-nos a apoiar associações de ajuda animal em ${region?.region || 'esta região'}!`;
+    } else if (filter === 'Social') {
+      return `Sê o primeiro a ajudar-nos a apoiar associações de ajuda social em ${region?.region || 'esta região'}!`;
+    } else if (filter === '---') {
+      return `Sê o primeiro a ajudar-nos a apoiar associações em ${region?.region}!`;
+    }
+  };
 
   if (selectedInstitution) {
     return (
@@ -20,64 +36,64 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter}) 
           &times;
         </button>
         <div className='flex flex-col items-center justify-center text-center'>
-            <img
-              src={`${process.env.PUBLIC_URL}/logos/${selectedInstitution.name}.jpg`}
-              alt="Institution"
-              className="w-32 rounded-md mb-4"
-            />
-            <h1 className="text-2xl font-bold mb-2">{selectedInstitution.name}</h1>
-            <p className="mb-2 text-xs text-center">{selectedInstitution.description}</p>
-            <a
-              href={selectedInstitution.website}
-              target="_blank"
-              rel="noreferrer"
-              className="text-xs hover:underline mb-2"
-            >
-              {selectedInstitution.website}
-            </a>
-            {selectedInstitution.phone && (
-              <div className="flex flex-row text-xs mb-2">
-                Tel: 
-                <a
-                  href={`tel:${selectedInstitution.phone}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline pl-1"
-                >
-                  {selectedInstitution.phone}
-                </a>
-              </div>
-            )}
-            {selectedInstitution.email && (
-              <div className="flex flex-row text-xs mb-2">Email:
-                <a
-                  href={`mailto:${selectedInstitution.email}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:underline pl-1"
-                >
-                  {selectedInstitution.email}
-                </a>
-              </div>
-            )}
-            {selectedInstitution.donations && (
-              <>
-                <h2 className="font-bold mb-2">Donativos</h2>
-                {selectedInstitution.donations.map((donation: string) => (
-                  (donation.startsWith('http')) ?
-                    <a
-                      href={donation}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-xs hover:underline mb-2"
-                    >
-                      {donation}
-                    </a>
-                  :
-                    <p className="text-xs mb-2">{donation}</p>
-                ))}
-              </>
-            )}  
+          <img
+            src={`${process.env.PUBLIC_URL}/logos/${selectedInstitution.name}.jpg`}
+            alt="Institution"
+            className="w-32 rounded-md mb-4"
+          />
+          <h1 className="text-2xl font-bold mb-2">{selectedInstitution.name}</h1>
+          <p className="mb-2 text-xs text-center">{selectedInstitution.description}</p>
+          <a
+            href={selectedInstitution.website}
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs hover:underline mb-2"
+          >
+            {selectedInstitution.website}
+          </a>
+          {selectedInstitution.phone && (
+            <div className="flex flex-row text-xs mb-2">
+              Tel: 
+              <a
+                href={`tel:${selectedInstitution.phone}`}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:underline pl-1"
+              >
+                {selectedInstitution.phone}
+              </a>
+            </div>
+          )}
+          {selectedInstitution.email && (
+            <div className="flex flex-row text-xs mb-2">Email:
+              <a
+                href={`mailto:${selectedInstitution.email}`}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:underline pl-1"
+              >
+                {selectedInstitution.email}
+              </a>
+            </div>
+          )}
+          {selectedInstitution.donations && (
+            <>
+              <h2 className="font-bold mb-2">Donativos</h2>
+              {selectedInstitution.donations.map((donation: string) => (
+                (donation.startsWith('http')) ?
+                  <a
+                    href={donation}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs hover:underline mb-2"
+                  >
+                    {donation}
+                  </a>
+                :
+                  <p className="text-xs mb-2">{donation}</p>
+              ))}
+            </>
+          )}  
         </div>
       </div>
     );
@@ -93,21 +109,28 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter}) 
 
   return (
     <div className="overflow-y-auto max-h-96 p-4 border m-6 border-gray-300 rounded-md shadow-md">
-      <div className="grid grid-cols-3 gap-4">
-        {filteredInstitutions.map((institution) => (
-          (institution.name) &&
-          <div
-            onClick={() => setSelectedInstitution(institution)}
-            className="w-40 flex items-center justify-center cursor-pointer hover:scale-105 hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:rounded-lg transition-transform"
-          >
-            <img
-              src={`${process.env.PUBLIC_URL}/logos/${institution.name}.jpg`}
-              alt="Institution"
-              className="p-4 transition-transform"
-            />
-          </div>
-        ))}
-      </div>
+      {filteredInstitutions.length === 0 ? (
+        <p className="text-center text-xl font-semibold">
+          {getNoAssociationsMessage()}
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {filteredInstitutions.map((institution) => (
+            (institution.name) &&
+            <div
+              key={institution.id}
+              onClick={() => setSelectedInstitution(institution)}
+              className="w-full flex items-center justify-center cursor-pointer hover:scale-105 hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:rounded-lg transition-transform"
+            >
+              <img
+                src={`${process.env.PUBLIC_URL}/logos/${institution.name}.jpg`}
+                alt="Institution"
+                className="p-4 transition-transform"
+              />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
