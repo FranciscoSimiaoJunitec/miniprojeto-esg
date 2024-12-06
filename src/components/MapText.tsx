@@ -26,7 +26,7 @@ const MapText: React.FC = () => {
   };
 
   const handleShowMap = () => {
-    setShowMap(true); // Exibe o mapa
+    setShowMap(!showMap); // Exibe o mapa
   };
 
   const handleCloseSideBar = () => {
@@ -42,10 +42,11 @@ const MapText: React.FC = () => {
       className="min-h-[calc(100vh-200px)] flex flex-col md:flex-row items-start justify-between bg-gradient-to-b from-[#3e7ab9] to-[#053581] p-8 text-white relative"
     >
       {/* Texto */}
+      {(!showMap || !isMobile) && (
       <SlideInAnimation
         direction="left"
         className={`w-full md:w-2/3 mb-8 md:mb-0 flex flex-col items-center justify-start mt-24 md:ml-0 transition-opacity duration-500 ${
-          selectedRegion ? 'opacity-0' : 'opacity-100'
+          showMap ? 'opacity-0' : 'opacity-100'
         }`}
       >
         <div className="flex items-center justify-center mb-8 whitespace-nowrap">
@@ -60,21 +61,24 @@ const MapText: React.FC = () => {
           as associações disponíveis. Com apenas alguns cliques, encontra a causa que mais ressoa contigo e descobre como fazer a diferença. Simples ações
           podem criar um enorme impacto na vida de alguém.
         </p>
-        <p className="font-semibold text-lg md:text-2xl text-center md:text-justify">
-          {showMap || !isMobile
+        <p className="font-semibold text-lg md:text-2xl text-center md:text-justify mb-32">
+          {!isMobile
             ? 'Clica num Distrito ou Região Autónoma para veres as associações disponíveis!'
             : 'Clica no botão abaixo para explorar o mapa interativo!'}
         </p>
-        {/* Renderização condicional do botão "Ver Mapa" */}
-        {!showMap && !selectedRegion && isMobile && (
-          <button
-            onClick={handleShowMap}
-            className="px-6 py-3 bg-transparent border border-white text-white font-bold rounded-full mt-4 md:hidden"
-          >
-            Ver Mapa
-          </button>
-        )}
+        
       </SlideInAnimation>
+      )}
+
+      {/* Renderização condicional do botão "Ver Mapa" */}
+      {(!selectedRegion && isMobile) && (
+        <button
+          onClick={handleShowMap}
+          className="absolute left-1/3 w-1/3 bottom-10 px-6 py-3 bg-transparent border border-white text-white font-bold z-50 rounded-full"
+        >
+        { !showMap ? "Ver Mapa" : "Voltar" }
+        </button>
+      )}
 
       {/* Mapa */}
       {(showMap || !isMobile) && (
@@ -82,7 +86,7 @@ const MapText: React.FC = () => {
           className={`w-full md:w-1/2 relative overflow-hidden translate-x-[30px] ${
             selectedRegion && isMobile ? 'hidden' : ''
           }`}
-          style={{ minHeight: '700px' }}
+          style={{ minHeight: '700px' , maxHeight: '700px'}}
         >
           <SlideInAnimation
             direction="right"
