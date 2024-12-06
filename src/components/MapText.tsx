@@ -79,14 +79,14 @@ const MapText: React.FC = () => {
       {/* Mapa */}
       {(showMap || !isMobile) && (
         <div
-          className={`w-full md:w-1/2 relative ${
+          className={`w-full md:w-1/2 relative overflow-hidden translate-x-[30px] ${
             selectedRegion && isMobile ? 'hidden' : ''
           }`}
           style={{ minHeight: '700px' }}
         >
           <SlideInAnimation
             direction="right"
-            className="absolute z-30 top-[55%] left-[-15%] md:left-[-25%] transform translate-x-[-55%] translate-y-[-45%] scale-[1.1] md:scale-[0.95] w-[80%] md:w-[70%] "
+            className="absolute z-30 top-[55%] left-[-25%] md:left-[-22%]  transform translate-x-[-45%] translate-y-[-45%] scale-[1.1] md:scale-[0.95] w-[80%] md:w-[70%] outline-dashed "
           >
             <MadeiraMap
               tooltipId="madeira-tooltip"
@@ -97,7 +97,7 @@ const MapText: React.FC = () => {
 
           <SlideInAnimation
             direction="right"
-            className="absolute z-20 top-[30%] left-[-75%] md:left-[-75%] transform translate-x-[-50%] translate-y-[-55%] scale-[1.1] md:scale-[0.95] w-[120%] md:w-[120%]"
+            className="absolute z-20 top-[30%] left-[-75%] md:left-[-75%] transform translate-x-[-50%] translate-y-[-55%] scale-[1.1] md:scale-[0.95] w-[120%] md:w-[120%] "
           >
             <AcoresMap
               tooltipId="acores-tooltip"
@@ -108,7 +108,7 @@ const MapText: React.FC = () => {
 
           <SlideInAnimation
             direction="right"
-            className="absolute inset-0 z-10 right-[-20%] md:right-[-5%] transform translate-x-0 scale-[1.1] md:scale-[1]"
+            className="absolute inset-0 z-10 right-[-20%] md:right-[-5%] transform translate-x-0 scale-[1.1] md:scale-[1] "
           >
             <PortugalMap
               tooltipId="portugal-tooltip"
