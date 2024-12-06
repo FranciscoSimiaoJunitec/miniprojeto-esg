@@ -74,7 +74,7 @@ const MapText: React.FC = () => {
       {(!selectedRegion && isMobile) && (
         <button
           onClick={handleShowMap}
-          className="absolute left-1/3 w-1/3 bottom-10 px-6 py-3 bg-transparent border border-white text-white font-bold z-50 rounded-full"
+          className="absolute left-1/3 w-1/3 bottom-10 px-6 py-3 bg-transparent border border-white text-white font-bold z-10 rounded-full"
         >
         { !showMap ? "Ver Mapa" : "Voltar" }
         </button>

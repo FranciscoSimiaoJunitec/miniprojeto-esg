@@ -17,7 +17,7 @@ const Progress: React.FC = () => {
       <h1 className='text-left absolute font-700 pl-8 text-4xl md:text-6xl -translate-y-20 md:-translate-y-24 pb-10'>PROGRESSO 2024</h1>
       <div className='flex flex-row py-12 px-8 justify-between bg-[#F3EEE9]'>
         <motion.div 
-          className='w-1/6'
+          className='w-1/4'
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.3 }}
@@ -30,7 +30,7 @@ const Progress: React.FC = () => {
         </motion.div>
         
         <motion.div 
-          className='w-1/5'
+          className='w-1/4'
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.5 }}
@@ -43,7 +43,7 @@ const Progress: React.FC = () => {
         </motion.div>
         
         <motion.div 
-          className='w-1/5'
+          className='w-1/4'
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.7 }}

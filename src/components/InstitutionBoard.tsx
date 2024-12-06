@@ -28,7 +28,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
   if (selectedInstitution) {
     return (
       (selectedInstitution.name) &&
-      <div className="relative p-6 border m-4 border-gray-300 rounded-md shadow-md">
+      <div className="relative p-6 border m-4 border-gray-300 rounded-md shadow-md z-50">
         <button
           onClick={() => setSelectedInstitution(null)}
           className="absolute right-6 text-5xl text-gray-400 px-3 py-1 rounded hover:bg-gray-200 hover:text-white"
