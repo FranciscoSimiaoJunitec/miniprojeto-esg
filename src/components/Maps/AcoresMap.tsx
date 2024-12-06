@@ -44,7 +44,7 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
-            center: [-35, 37],
+            center: [-36, 35],
             scale: 2000,
           }}
           viewBox="0 0 800 600" // Adjust the viewBox to make it responsive
@@ -79,20 +79,20 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
                       default: {
                         fill: isPortugal ? (isSelected ? '#D2F4FF' : '#74D1EF') : '#D6D6DA',
                         outline: 'none',
-                        stroke: isPortugal ? '#00277d' : '#D6D6DA', // Border color
-                        strokeWidth: 0.5, // Border width
+                        stroke: isPortugal ? '#74D1EF' : '#74D1EF', // Border color
+                        strokeWidth: 2, // Border width
                       },
                       hover: {
-                        fill: isPortugal ? '#D2F4FF' : '#D6D6DA',
+                        fill: isPortugal ? '#D2F4FF' : '#D2F4FF',
                         outline: 'none',
-                        stroke: isPortugal ? '#00277d' : '#D6D6DA', // Border color
-                        strokeWidth: 0.5, // Border width
+                        stroke: isPortugal ? '#D2F4FF' : '#D6D6DA', // Border color
+                        strokeWidth: 2, // Border width
                       },
                       pressed: {
-                        fill: isPortugal ? '#D2F4FF' : '#D6D6DA',
+                        fill: isPortugal ? '#D2F4FF' : '#D2F4FF',
                         outline: 'none',
-                        stroke: isPortugal ? '#00277d' : '#D6D6DA', // Border color
-                        strokeWidth: 0.5, // Border width
+                        stroke: isPortugal ? '#D2F4FF' : '#D6D6DA', // Border color
+                        strokeWidth: 2, // Border width
                       },
                     }}
                   />
