@@ -86,7 +86,7 @@ const MapText: React.FC = () => {
         >
           <SlideInAnimation
             direction="right"
-            className="absolute z-30 top-[55%] left-[-15%] md:left-[-25%] transform translate-x-[-55%] translate-y-[-45%] scale-[1.1] md:scale-[0.95] w-[80%] md:w-[70%]"
+            className="absolute z-30 top-[55%] left-[-15%] md:left-[-25%] transform translate-x-[-55%] translate-y-[-45%] scale-[1.1] md:scale-[0.95] w-[80%] md:w-[70%] "
           >
             <MadeiraMap
               tooltipId="madeira-tooltip"
@@ -108,7 +108,7 @@ const MapText: React.FC = () => {
 
           <SlideInAnimation
             direction="right"
-            className="absolute inset-0 z-10 right-[-20%] md:right-[-10%] transform translate-x-0 scale-[1.1] md:scale-[1]"
+            className="absolute inset-0 z-10 right-[-20%] md:right-[-5%] transform translate-x-0 scale-[1.1] md:scale-[1]"
           >
             <PortugalMap
               tooltipId="portugal-tooltip"
