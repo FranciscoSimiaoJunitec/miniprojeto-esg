@@ -44,7 +44,7 @@ const AcoresMap: React.FC<AcoresMapProps> = ({
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
-            center: [-36, 35],
+            center: [-36, 34],
             scale: 2000,
           }}
           viewBox="0 0 800 600" // Adjust the viewBox to make it responsive

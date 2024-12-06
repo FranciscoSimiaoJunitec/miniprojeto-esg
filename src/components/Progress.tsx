@@ -25,7 +25,8 @@ const Progress: React.FC = () => {
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
             {isInView && <Counter from={0} to={31} duration={2} />}
           </h2>
-          <p className='text-center text-sm md:text-base'>Horas de Voluntariado</p>
+          <p className='text-center text-sm md:text-base'>Horas de </p>
+          <p className='text-center text-sm md:text-base translate-x-[-14px] md:translate-x-0'>Voluntariado</p>
         </motion.div>
         
         <motion.div 

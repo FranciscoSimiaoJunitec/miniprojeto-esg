@@ -44,7 +44,7 @@ const MadeiraMap: React.FC<MadeiraMapProps> = ({
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
-            center: [-19, 32.7],
+            center: [-18, 32],
             scale: 7000,
           }}
           viewBox="0 0 800 600" // Adjust the viewBox to make it responsive
