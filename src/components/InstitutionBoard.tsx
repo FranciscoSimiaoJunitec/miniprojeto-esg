@@ -114,11 +114,10 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
           {getNoAssociationsMessage()}
         </p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div key={regionID} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {filteredInstitutions.map((institution) => (
             (institution.name) &&
             <div
-              key={institution.id}
               onClick={() => setSelectedInstitution(institution)}
               className="w-full flex items-center justify-center cursor-pointer hover:scale-105 hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:rounded-lg transition-transform"
             >

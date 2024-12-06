@@ -46,7 +46,7 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
   return (
     <SlideInAnimation
       direction="left"
-      className="absolute top-0 left-0 h-full w-full md:w-1/2 bg-white text-black p-6 shadow-lg z-40"
+      className="absolute top-0 left-0 h-full w-full md:w-1/2 bg-white text-black p-6 z-40"
     >
       <div className="relative h-full">
         <button
@@ -92,7 +92,7 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
                 </span>
               </button>
               {isDropdownOpen && (
-                <ul className="absolute mt-12 left-32 w-full bg-[#2790CA] text-white border border-gray-300 rounded shadow-lg">
+                <ul className="absolute mt-12 left-32 w-full bg-[#2790CA] text-white border border-gray-300 rounded shadow-lg z-50">
                   {filters.map((filter) => (
                     <li
                       key={filter}
