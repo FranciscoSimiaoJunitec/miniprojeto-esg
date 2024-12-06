@@ -51,9 +51,9 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
       <div className="relative h-full">
         <button
           onClick={handleClose}
-          className="absolute top-1/2 transform -translate-y-1/2 -right-6 text-gray-600 text-4xl bg-[#D6D6D6] bg-opacity-50 hover:text-gray-700 px-2 py-2 z-10 rotate-180"
+          className="absolute top-1/2 transform -right-6 md:translate-x-9 md:rotate-180 text-gray-600 text-4xl bg-[#D6D6D6] bg-opacity-80 hover:text-gray-700 px-2 py-4 z-10"
           style={{
-            clipPath: 'polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%)',
+            clipPath: 'polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%)',
           }}
         >
           &times;

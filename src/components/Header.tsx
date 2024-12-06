@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
-      <div className="container mx-auto flex items-center justify-between relative">
+      <div className="container flex items-center justify-stretch">
         <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="h-16 pr-20" />
         {isMobile ? (
           <>
@@ -32,13 +32,12 @@ const Header: React.FC = () => {
             </nav>
           </>
         ) : (
-          <nav className="flex-1 md:flex md:items-center md:justify-center">
-            <ul className="flex flex-col md:flex-row gap-4 md:gap-48 text-xl font-semibold">
-              <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
-              <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
-              <li><a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a></li>
-            </ul>
-          </nav>
+          
+          <div className="flex flex-row justify-evenly text-xl font-semibold w-full">
+            <a href="#map-section" className="hover-effect">Como Ajudar</a>
+            <a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a>
+            <a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a>
+          </div>
         )}
       </div>
     </header>

@@ -20,7 +20,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
       return `Sê o primeiro a ajudar-nos a apoiar associações de ajuda animal em ${region?.region || 'esta região'}!`;
     } else if (filter === 'Social') {
       return `Sê o primeiro a ajudar-nos a apoiar associações de ajuda social em ${region?.region || 'esta região'}!`;
-    } else if (filter === '---') {
+    } else {
       return `Sê o primeiro a ajudar-nos a apoiar associações em ${region?.region}!`;
     }
   };
@@ -103,13 +103,13 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
   ? allInstitutions 
   : allInstitutions.filter((institution) => institution.id === regionID);
 
-  const filteredInstitutions = filter && filter !== '---'
+  const filteredInstitutions = filter 
     ? institutions.filter((institution) => institution.type === filter)
     : institutions;
 
   return (
     <div className="overflow-y-auto max-h-96 p-4 border m-6 border-gray-300 rounded-md shadow-md">
-      {filteredInstitutions.length === 0 ? (
+      {(filteredInstitutions.length === 0 || !filteredInstitutions[0].name) ? (
         <p className="text-center text-xl font-semibold">
           {getNoAssociationsMessage()}
         </p>

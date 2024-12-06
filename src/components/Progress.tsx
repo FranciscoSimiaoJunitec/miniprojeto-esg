@@ -15,7 +15,7 @@ const Progress: React.FC = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <h1 className='text-left absolute font-700 pl-8 text-4xl md:text-6xl -translate-y-20 md:-translate-y-24 pb-10'>PROGRESSO 2024</h1>
-      <div className='flex flex-row py-12 px-8 justify-evenly bg-[#F3EEE9]'>
+      <div className='flex flex-row py-12 px-8 justify-between bg-[#F3EEE9]'>
         <motion.div 
           className='w-1/6'
           initial={{ opacity: 0 }}
@@ -25,8 +25,8 @@ const Progress: React.FC = () => {
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
             {isInView && <Counter from={0} to={31} duration={2} />}
           </h2>
-          <p className='text-center text-sm md:text-base'>Horas de </p>
-          <p className='text-center text-sm md:text-base translate-x-[-14px] md:translate-x-0'>Voluntariado</p>
+          <p className='text-center text-sm'>Horas de</p>
+          <p className='text-center text-sm'>Voluntariado</p>
         </motion.div>
         
         <motion.div 
@@ -38,7 +38,8 @@ const Progress: React.FC = () => {
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
             {isInView && <Counter from={0} to={8} duration={1.5} />}
           </h2>
-          <p className='text-center text-sm md:text-base'>Associações Impactadas</p>
+          <p className='text-center text-sm'>Associações</p>
+          <p className='text-center text-sm'>Impactadas</p>
         </motion.div>
         
         <motion.div 
@@ -50,8 +51,8 @@ const Progress: React.FC = () => {
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
             {isInView && <Counter from={0} to={500} duration={2.5} />}€
           </h2>
-          <p className='text-center text-sm md:text-base'>Doações</p>
-          <p className='text-center text-sm md:text-base'>Monetárias</p>
+          <p className='text-center text-sm '>Doações</p>
+          <p className='text-center text-sm '>Monetárias</p>
         </motion.div>
       </div>
     </motion.div>
