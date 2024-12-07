@@ -12,8 +12,8 @@ const SlideInAnimation: React.FC<SlideInAnimationProps> = ({ direction, children
   const isInView = useInView(ref, { once: true });
 
   const variants = {
-    hidden: { x: direction === 'left' ? -100 : 100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 0.8 } }
+    hidden: { x: direction === 'left' ? -100 : 100 },
+    visible: { x: 0, transition: { duration: 0.8 } }
   };
 
   return (
