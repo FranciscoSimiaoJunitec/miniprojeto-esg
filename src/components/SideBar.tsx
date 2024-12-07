@@ -76,7 +76,7 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
           </p>
           <div className="flex items-center mt-10">
             {/* Dropdown Menu */}
-            <div className="relative flex flex-row md:gap-8 gap-16">
+            <div className="relative flex flex-row md:gap-8 gap-16 z-50">
               {/* Header */}
               <h3 className="text-sm md:text-base ml-4 mt-2">Filtrar por:</h3>
               <button
