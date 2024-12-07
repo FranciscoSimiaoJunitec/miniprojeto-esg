@@ -46,9 +46,9 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
   return (
     <SlideInAnimation
       direction="left"
-      className="absolute top-0 left-0 h-full w-full md:w-1/2 bg-white text-black p-6 z-50"
+      className="absolute top-0 left-0 h-full w-full md:w-1/2 bg-white text-black p-6 z-40"
     >
-      <div className="relative h-full">
+      <div className="relative">
         <button
           onClick={handleClose}
           className="absolute top-1/2 transform -right-6 md:translate-x-9 md:rotate-180 text-gray-600 text-4xl bg-[#D6D6D6] bg-opacity-80 hover:text-gray-700 px-2 py-4 z-10"
@@ -60,10 +60,10 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
         </button>
         <div className="mt-12">
           <div className='flex flex-row justify-between pr-12'>
-            <h1 className="text-4xl font-bold mb-4">{regionID === 0 ? "Portugal" : region?.region.toUpperCase()}</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 md:mb-4">{regionID === 0 ? "Portugal" : region?.region.toUpperCase()}</h1>
             {regionID !== 0 &&
               <p
-                className="pt-4 hover:underline cursor-pointer"
+                className="md:pt-4 text-sm pt-3 hover:underline cursor-pointer"
                 onClick={handleShowAll}
               >
                 VER TODOS
@@ -71,18 +71,18 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
             }
           </div>
           <div className="w-11/12 h-0.5 bg-gray-300 mb-4"></div>
-          <p className="mt-4">
+          <p className="text-sm md:text-base mt-4">
             Clica numa associação para veres mais detalhes
           </p>
           <div className="flex items-center mt-10">
             {/* Dropdown Menu */}
-            <div className="relative flex flex-row gap-8">
+            <div className="relative flex flex-row md:gap-8 gap-16">
               {/* Header */}
-              <h3 className="ml-4 mt-2">Filtrar por:</h3>
+              <h3 className="text-sm md:text-base ml-4 mt-2">Filtrar por:</h3>
               <button
                 onClick={toggleDropdown}
                 style={{ backgroundColor: '#2790CA', color: '#FFFFFF' }}
-                className="font-semibold py-1 px-6 w-64 border border-gray-400 rounded shadow flex items-center justify-between"
+                className="font-semibold py-1 px-6 md:w-64 w-44 border border-gray-400 rounded shadow flex items-center justify-between"
               >
                 {selectedFilter}
                 <span
@@ -92,7 +92,7 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
                 </span>
               </button>
               {isDropdownOpen && (
-                <ul className="absolute mt-12 left-32 w-full bg-[#2790CA] text-white border border-gray-300 rounded shadow-lg z-50">
+                <ul className="absolute mt-10 md:mt-12 right-0 md:left-32 md:w-64 w-44 bg-[#2790CA] text-white border border-gray-300 rounded shadow-lg z-50">
                   {filters.map((filter) => (
                     <li
                       key={filter}
@@ -110,6 +110,7 @@ const SideBar: React.FC<SideBarProps> = ({ regionID, onClose, onClearRegion, set
             regionID={region ? region.id : 0}
             filter={selectedFilter === 'Impacto' ? null : selectedFilter}
           />
+          <br />
         </div>
       </div>
     </SlideInAnimation>

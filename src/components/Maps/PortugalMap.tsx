@@ -34,10 +34,11 @@ const PortugalMap: React.FC<PortugalMapProps> = ({
           }
 
           .custom-tooltip {
-            background-color: rgba(214, 214, 214, 0.8); /* Semi-transparent color */
+            background-color: rgba(214, 214, 214, 1); /* Semi-transparent color */
             border-radius: 8px; /* Rounded corners */
             padding: 10px;
-            color: #FFFFFF; /* White text color */
+            font-weight: bold;
+            color: #4d73b1; /* White text color */
           }
         `}
       </style>

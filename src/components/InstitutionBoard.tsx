@@ -108,7 +108,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
     : institutions;
 
   return (
-    <div className="overflow-y-auto max-h-96 p-4 border m-6 border-gray-300 rounded-md shadow-md">
+    <div className="overflow-y-auto max-h-96 p-8 border m-6 border-gray-300 rounded-md shadow-md">
       {(filteredInstitutions.length === 0 || !filteredInstitutions[0].name) ? (
         <p className="text-center text-xl font-semibold">
           {getNoAssociationsMessage()}
