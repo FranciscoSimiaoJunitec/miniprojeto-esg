@@ -85,9 +85,9 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
                     href={donation}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-xs hover:underline mb-2"
+                    className="text-xs hover:underline mb-2 overflow-hidden text-[#2790CA] font-bold"
                   >
-                    {donation}
+                    Donate Here
                   </a>
                 :
                   <p className="text-xs mb-2">{donation}</p>
