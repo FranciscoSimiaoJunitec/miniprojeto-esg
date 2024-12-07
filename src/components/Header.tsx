@@ -28,9 +28,8 @@ const Header: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
               }
-             
             </button>
-            <nav className={`mr-[-2rem] ml-[-2rem] pb-[10px] absolute top-full left-0 right-0 bg-[#0944A1] ${isOpen ? 'flex' : 'hidden'} flex-col items-center`} >
+            <nav className={`mobile-menu ${isOpen ? 'open' : ''}`}>
               <ul className="flex flex-col items-center gap-4 text-xl font-semibold">
                 <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
                 <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
@@ -39,12 +38,13 @@ const Header: React.FC = () => {
             </nav>
           </>
         ) : (
-          
-          <div className="flex flex-row justify-evenly text-xl font-semibold w-full">
-            <a href="#map-section" className="hover-effect">Como Ajudar</a>
-            <a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a>
-            <a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a>
-          </div>
+          <nav className="flex-1 md:flex md:items-center md:justify-center">
+            <ul className="flex flex-col md:flex-row gap-4 md:gap-48 text-xl font-semibold">
+              <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
+              <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
+              <li><a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a></li>
+            </ul>
+          </nav>
         )}
       </div>
     </header>

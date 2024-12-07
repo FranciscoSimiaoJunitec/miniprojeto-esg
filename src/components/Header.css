@@ -21,12 +21,14 @@
   background-color: #0944A1;
   overflow: hidden;
   max-height: 0;
-  width: 100%; /* Ensure the menu takes the full width of the header */
-  transition: max-height 0.3s ease-in-out;
+  opacity: 0;
+  width: 100%; 
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .mobile-menu.open {
-  max-height: 200px; /* Adjust this value based on the content height */
+  max-height: 200px; 
+  opacity: 1;
 }
 
 .mobile-menu ul {
