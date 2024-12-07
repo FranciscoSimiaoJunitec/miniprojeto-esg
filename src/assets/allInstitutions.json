@@ -278,6 +278,9 @@
         "website": "https://www.aproximar.pt/",
         "email": "contacto@aproximar.pt",
         "address": "Rua do Paraíso, loja n.º 2 2610-136 Alfragide ",
+        "donations": [
+            "https://www.aproximar.pt/seja-solidario.html"
+        ],
         "region": "Lisboa",
         "id": 12
     },

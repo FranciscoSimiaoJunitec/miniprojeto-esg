@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
       {/* Layer 1: Background Image */}
       <div className="absolute inset-0 z-0 transform -translate-y-10">
         <img
-          src={`https://i.ibb.co/56jdScK/background.jpg`} 
+          src={`${process.env.PUBLIC_URL}/background comprimido.png`} 
           alt="Background"
           className="object-cover w-full h-full"
         />

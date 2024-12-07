@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const isMobile = vw < 768; // Example breakpoint for mobile
+  const isMobile = vw < 768; 
 
   return (
     <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
