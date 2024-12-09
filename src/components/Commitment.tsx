@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import SlideRightAnimation from './animations/SlideRight';
 
 const Commitment: React.FC = () => {
-  const videoId = 'MNK5B6OUXkE';
+  const videoId = 'v4j_W1z9mZs';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
   const blockquoteRef = useRef(null);
   const isInView = useInView(blockquoteRef, { once: true });

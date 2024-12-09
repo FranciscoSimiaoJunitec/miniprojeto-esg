@@ -49,10 +49,10 @@ const Progress: React.FC = () => {
           transition={{ delay: 0.7 }}
         >
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
-            {isInView && <Counter from={0} to={500} duration={2.5} />}€
+            {isInView && <Counter from={0} to={6500} duration={3.0} />}€
           </h2>
           <p className='text-center text-sm '>Doações</p>
-          <p className='text-center text-sm '>Monetárias</p>
+          <p className='text-center text-sm '>à Comunidade</p>
         </motion.div>
       </div>
     </motion.div>
