@@ -11,11 +11,12 @@ const Header: React.FC = () => {
   };
 
   const isMobile = vw < 768; 
+  const isSmall = vw < 1024;
 
   return (
     <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
-      <div className="container flex items-center justify-stretch">
-        <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="h-16 pr-20" />
+      <div className="container flex items-center justify-between">
+        <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="md:h-16 h-12 pr-20" />
         {isMobile ? (
           <>
             <button className="block md:hidden absolute right-8" onClick={toggleMenu}>
@@ -38,13 +39,11 @@ const Header: React.FC = () => {
             </nav>
           </>
         ) : (
-          <nav className="flex-1 md:flex md:items-center md:justify-center">
-            <ul className="flex flex-col md:flex-row gap-4 md:gap-48 text-xl font-semibold">
-              <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
-              <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
-              <li><a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a></li>
-            </ul>
-          </nav>
+          <ul className={`flex  w-4/6 flex-row ${!isSmall ? 'text-xl' : 'text-lg'} font-semibold justify-between`}>
+            <li><a href="#map-section" className="hover-effect">Como Ajudar</a></li>
+            <li><a href="https://junitec.pt/home/" target="_blank" rel="noopener noreferrer" className="hover-effect">Conhece-nos</a></li>
+            <li><a href="https://junitec.pt/contactos/" target="_blank" rel="noopener noreferrer" className="hover-effect">Contactos</a></li>
+          </ul>
         )}
       </div>
     </header>
