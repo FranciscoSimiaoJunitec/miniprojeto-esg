@@ -26,7 +26,7 @@ const Commitment: React.FC = () => {
         <SlideRightAnimation direction="right" endY={-30} endX={50} className="absolute inset-0 md:bg-[#F3EEE9] z-0 w-[50%] h-[90%] top-[20%] left-[20%]">
           <div></div>
         </SlideRightAnimation>
-        
+
         <SlideRightAnimation
           direction="right"
           className="relative z-10 md:w-4/5 max-w-xl bg-[#175FAAED] text-white p-8 shadow-lg flex flex-col justify-start transform md:translate-y-10 ml-4"
@@ -38,11 +38,14 @@ const Commitment: React.FC = () => {
           <p className="text-sm md:text-lg text-justify pt-10 px-4 md:pr-20">
             Neste ano, reforçámos esse compromisso. Elaborámos o nosso primeiro <span className="font-bold">relatório ESG</span>, consolidando práticas que integram os pilares Ambiental, Social e Governança, em parceria com entidades de renome, como a <span className="font-bold">Veolia</span> e a <span className="font-bold">A.T Kearney.</span> Esta abordagem traduz a nossa dedicação em atuar de forma consciente, deixando uma marca positiva no presente e inspirando as gerações futuras.
           </p>
-          {/* <button className="mt-8 bg-white text-[#175FAAED] font-bold py-2 px-4 rounded hover:bg-gray-200">
+          <button
+            className="mt-8 bg-white text-[#175FAAED] font-bold py-2 px-4 rounded hover:bg-gray-200"
+            onClick={() => window.open(`${process.env.PUBLIC_URL}/report.pdf`, '_blank')}
+          >
             Ver Relatório
-          </button> */}
+          </button>
         </SlideRightAnimation>
-        
+
         <div className="relative md:absolute md:top-[calc(50%-50px)] md:left-[calc(50%-50px)] md:w-3/5 w-4/5 aspect-video bg-gray-200 overflow-hidden shadow-lg transform md:translate-y-[-150px] md:-translate-x-[20px] z-20 mt-8 md:mt-0">
           <iframe
             width="100%"
