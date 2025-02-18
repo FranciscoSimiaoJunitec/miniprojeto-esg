@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   const isSmall = vw < 1024;
 
   return (
-    <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
+    <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative shadow-md">
       <div className="container flex items-center justify-between">
         <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="md:h-16 h-12 pr-20" />
         {isMobile ? (
