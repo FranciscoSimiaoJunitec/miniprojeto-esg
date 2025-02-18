@@ -37,7 +37,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
         </button>
         <div className='flex flex-col items-center justify-center text-center'>
           <img
-            src={`${process.env.PUBLIC_URL}/logos/${selectedInstitution.name}.jpg`}
+            src={`${import.meta.env.BASE_URL}logos/${selectedInstitution.name}.jpg`}
             alt="Institution"
             className="w-32 rounded-md mb-4"
           />
@@ -53,7 +53,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
           </a>
           {selectedInstitution.phone && (
             <div className="flex flex-row text-xs mb-2">
-              Tel: 
+              Tel:
               <a
                 href={`tel:${selectedInstitution.phone}`}
                 target="_blank"
@@ -89,21 +89,21 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
                   >
                     Donate Here
                   </a>
-                :
+                  :
                   <p className="text-xs mb-2">{donation}</p>
               ))}
             </>
-          )}  
+          )}
         </div>
       </div>
     );
   }
 
-  const institutions = regionID === 0 
-  ? allInstitutions 
-  : allInstitutions.filter((institution) => institution.id === regionID);
+  const institutions = regionID === 0
+    ? allInstitutions
+    : allInstitutions.filter((institution) => institution.id === regionID);
 
-  const filteredInstitutions = filter 
+  const filteredInstitutions = filter
     ? institutions.filter((institution) => institution.type === filter)
     : institutions;
 
@@ -122,7 +122,7 @@ const InstitutionBoard: React.FC<InstitutionBoardProps> = ({ regionID, filter })
               className="w-full flex items-center justify-center cursor-pointer hover:scale-105 hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:rounded-lg transition-transform"
             >
               <img
-                src={`${process.env.PUBLIC_URL}/logos/${institution.name}.jpg`}
+                src={`${import.meta.env.BASE_URL}logos/${institution.name}.jpg`}
                 alt="Institution"
                 className="p-4 transition-transform"
               />

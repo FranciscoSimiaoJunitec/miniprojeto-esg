@@ -40,7 +40,7 @@ const Commitment: React.FC = () => {
           </p>
           <button
             className="mt-8 bg-white text-[#175FAAED] font-bold py-2 px-4 rounded hover:bg-gray-200"
-            onClick={() => window.open(`${process.env.PUBLIC_URL}/report.pdf`, '_blank')}
+            onClick={() => window.open(`${import.meta.env.BASE_URL}report.pdf`, '_blank')}
           >
             Ver Relatório
           </button>

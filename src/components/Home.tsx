@@ -6,19 +6,24 @@ const HeroSection: React.FC = () => {
       {/* Layer 1: Background Image */}
       <div className="absolute inset-0 z-0 transform -translate-y-10">
         <img
-          src={`${process.env.PUBLIC_URL}/background comprimido.png`} 
-          alt="Background"
-          className="object-cover w-full h-full"
+          src={`${import.meta.env.BASE_URL}background comprimido.png`}
+          className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
+          alt="Background Desktop"
+        />
+        <img
+          src={`${import.meta.env.BASE_URL}13.png`}
+          className="absolute inset-0 w-full h-full object-cover z-0 md:hidden"
+          alt="Background Mobile"
         />
       </div>
 
       {/* Layer 2: Blue Gradient Overlay */}
       <div className="absolute inset-0 z-0 transform -translate-y-10">
         <img
-          src={`${process.env.PUBLIC_URL}/blur.svg`} 
+          src={`${import.meta.env.BASE_URL}blur.svg`}
           alt="Blur"
           className="object-cover w-full h-full"
-          style={{ filter: 'blur(0px)' }} 
+          style={{ filter: 'blur(0px)' }}
         />
       </div>
       <div className='text-start z-20 text-white -translate-y-[-6rem]'>
@@ -35,7 +40,7 @@ const HeroSection: React.FC = () => {
           <div className="w-4 h-4 bg-white border-4 border-white rounded-full animate-grow-bounce"></div>
         </div>
       </div>
-      <img src={`${process.env.PUBLIC_URL}/prancheta.svg`} alt="logo" />
+      <img src={`${import.meta.env.BASE_URL}prancheta.svg`} alt="logo" />
     </div>
   );
 };

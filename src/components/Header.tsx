@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useViewport } from 'react-viewport-hooks';
-import './Header.css'; 
+import './Header.css';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,17 +10,17 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const isMobile = vw < 768; 
+  const isMobile = vw < 768;
   const isSmall = vw < 1024;
 
   return (
-    <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative">
+    <header className="bg-[#0944A1] text-white flex items-center justify-between py-6 px-8 z-50 relative shadow-md">
       <div className="container flex items-center justify-between">
-        <img src={`${process.env.PUBLIC_URL}/logoJunitec.svg`} alt="logo" className="md:h-16 h-12 pr-20" />
+        <img src={`${import.meta.env.BASE_URL}logoJunitec.svg`} alt="logo" className="md:h-16 h-12 pr-20" />
         {isMobile ? (
           <>
             <button className="block md:hidden absolute right-8" onClick={toggleMenu}>
-              { isOpen ? 
+              {isOpen ?
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
