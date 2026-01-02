@@ -8,9 +8,9 @@ import SideBar from './SideBar';
 
 const MapText: React.FC = () => {
   const [selectedRegion, setSelectedRegion] = useState<any | null>(null);
-  const [showMap, setShowMap] = useState(false); 
-  const [isMobile, setIsMobile] = useState(false); 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
+  const [showMap, setShowMap] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,14 +28,14 @@ const MapText: React.FC = () => {
   };
 
   const handleShowMap = () => {
-    setShowMap(!showMap); 
+    setShowMap(!showMap);
   };
 
   const handleCloseSideBar = () => {
     setSelectedRegion(null);
-    setIsSidebarOpen(false); 
+    setIsSidebarOpen(false);
     if (isMobile) {
-      setShowMap(true); 
+      setShowMap(true);
     }
   };
 
@@ -48,11 +48,11 @@ const MapText: React.FC = () => {
       {(!showMap || !isMobile) && (
         <SlideInAnimation
           direction="left"
-          className={`w-full md:w-2/3 mb-8 md:mb-0 flex flex-col items-center justify-start mt-24 md:ml-0 transition-opacity duration-500 ${
-            showMap || isSidebarOpen ? 'opacity-0' : 'opacity-100'
-          }`}
+          className={`w-full md:w-2/3 mb-8 md:mb-0 flex flex-col items-center justify-start mt-24 md:ml-0 transition-opacity duration-500 ${showMap || isSidebarOpen ? 'opacity-0' : 'opacity-100'
+            }`}
         >
           <div className="flex items-center justify-center mb-8 whitespace-nowrap">
+            {/* @ts-ignore */}
             <ImQuotesLeft className="mr-4 text-6xl" />
             <h2 className="font-bold italic whitespace-nowrap text-xl md:text-5xl text-center">
               Ajudar Nunca Foi Tão Fácil
@@ -78,17 +78,16 @@ const MapText: React.FC = () => {
           onClick={handleShowMap}
           className="absolute left-1/3 w-1/3 bottom-10 px-6 py-3 bg-transparent border border-white text-white font-bold z-10 rounded-full"
         >
-          { !showMap ? "Ver Mapa" : "Voltar" }
+          {!showMap ? "Ver Mapa" : "Voltar"}
         </button>
       )}
 
       {/* Mapa */}
       {(showMap || !isMobile) && (
         <div
-          className={`w-full md:w-1/2 relative overflow-hidden translate-x-[30px] ${
-            selectedRegion && isMobile ? 'hidden' : ''
-          }`}
-          style={{ minHeight: '700px' , maxHeight: '700px'}}
+          className={`w-full md:w-1/2 relative overflow-hidden translate-x-[30px] ${selectedRegion && isMobile ? 'hidden' : ''
+            }`}
+          style={{ minHeight: '700px', maxHeight: '700px' }}
         >
           <SlideInAnimation
             direction="right"
