@@ -27,7 +27,6 @@ const HeroSection: React.FC = () => {
         />
       </div>
       <div className='text-start z-20 text-white -translate-y-[-6rem]'>
-        <h1 className="text-3xl md:text-5xl mb-2">NESTE NATAL</h1>
         <h2 className="text-3xl md:text-5xl mb-6">
           JUNTA-TE À <span className="font-700">JUNITEC</span>.
         </h2>

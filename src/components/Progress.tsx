@@ -14,7 +14,7 @@ const Progress: React.FC = () => {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h1 className='text-left absolute font-700 pl-8 text-4xl md:text-6xl -translate-y-20 md:-translate-y-24 pb-10'>PROGRESSO 2024</h1>
+      <h1 className='text-left absolute font-700 pl-8 text-4xl md:text-6xl -translate-y-20 md:-translate-y-24 pb-10'>PROGRESSO 2025</h1>
       <div className='flex flex-row py-12 px-8 justify-between bg-[#F3EEE9]'>
         <motion.div 
           className='w-1/4'
@@ -23,7 +23,7 @@ const Progress: React.FC = () => {
           transition={{ delay: 0.3 }}
         >
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
-            {isInView && <Counter from={0} to={31} duration={2} />}
+            {isInView && <Counter from={0} to={505} duration={2} />}
           </h2>
           <p className='text-center text-sm'>Horas de</p>
           <p className='text-center text-sm'>Voluntariado</p>
@@ -36,7 +36,7 @@ const Progress: React.FC = () => {
           transition={{ delay: 0.5 }}
         >
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
-            {isInView && <Counter from={0} to={8} duration={1.5} />}
+            {isInView && <Counter from={0} to={15} duration={1.5} />}
           </h2>
           <p className='text-center text-sm'>Associações</p>
           <p className='text-center text-sm'>Impactadas</p>
@@ -49,7 +49,7 @@ const Progress: React.FC = () => {
           transition={{ delay: 0.7 }}
         >
           <h2 className='text-center text-3xl md:text-5xl mb-2'>
-            {isInView && <Counter from={0} to={6500} duration={3.0} />}€
+            {isInView && <Counter from={0} to={8000} duration={3.0} />}€
           </h2>
           <p className='text-center text-sm '>Doações</p>
           <p className='text-center text-sm '>à Comunidade</p>

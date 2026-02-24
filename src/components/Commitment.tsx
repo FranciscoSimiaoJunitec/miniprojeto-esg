@@ -19,7 +19,7 @@ const Commitment: React.FC = () => {
       >
         <blockquote className="italic text-base md:text-3xl text-end mb-12 pb-8 px-4">
           "Numa geração que sonha com um futuro melhor, na JUNITEC transformamos ideias em ações que impactam o presente."
-          <span className="block mt-4 text-xs md:text-xl font-light text-end">Marta Fernandes, Secretária-Geral e responsável de ESG da JUNITEC</span>
+          <span className="block mt-4 text-xs md:text-xl font-light text-end">Matilde Santos, Secretária-Geral e responsável de ESG da JUNITEC</span>
         </blockquote>
       </motion.div>
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center relative">
@@ -36,11 +36,11 @@ const Commitment: React.FC = () => {
             Acreditamos que, mais do que júnior empresários, somos agentes de transformação, responsáveis por contribuir para um futuro melhor. Por isso, criámos um plano de ação que reflete o nosso compromisso com a <span className="font-bold">responsabilidade social</span>, onde, além de <span className="font-bold">doações</span> monetárias e em espécie, promovemos um programa interno de <span className="font-bold">voluntariado</span>, incentivando os nossos membros a envolver-se em iniciativas que impactam positivamente a sociedade.
           </p>
           <p className="text-sm md:text-lg text-justify pt-10 px-4 md:pr-20">
-            Neste ano, reforçámos esse compromisso. Elaborámos o nosso primeiro <span className="font-bold">relatório ESG</span>, consolidando práticas que integram os pilares Ambiental, Social e Governança, em parceria com entidades de renome, como a <span className="font-bold">Veolia</span> e a <span className="font-bold">A.T Kearney.</span> Esta abordagem traduz a nossa dedicação em atuar de forma consciente, deixando uma marca positiva no presente e inspirando as gerações futuras.
+            O ano passado, reforçámos esse compromisso. Elaborámos o nosso primeiro <span className="font-bold">relatório ESG</span>, consolidando práticas que integram os pilares Ambiental, Social e Governança. Este ano lançámos a segunda edição do relatório em parceria com entidades de renome, como a <span className="font-bold">Veolia</span> e a <span className="font-bold">A.T Kearney.</span> Esta abordagem traduz a nossa dedicação em atuar de forma consciente, deixando uma marca positiva no presente e inspirando as gerações futuras.
           </p>
           <button
             className="mt-8 bg-white text-[#175FAAED] font-bold py-2 px-4 rounded hover:bg-gray-200"
-            onClick={() => window.open(`${import.meta.env.BASE_URL}report.pdf`, '_blank')}
+            onClick={() => window.open('https://junitec.pt/wp-content/uploads/2026/01/JUNITEC-ESG-REPORT-2025.pdf', '_blank')}
           >
             Ver Relatório
           </button>
