@@ -4,7 +4,7 @@ import viteTsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
     plugins: [react(), viteTsconfigPaths()],
-    base: '/miniprojeto-esg/',
+    base: '/',
     server: {
         port: 3000,
         open: true,
